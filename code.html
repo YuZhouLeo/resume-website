@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EC.FINTECH | Precision Frontend Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-dim": "#3d546f",
+                    "secondary-fixed": "#fedeb1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#fff8f2",
+                    "primary-fixed": "#d1e4ff",
+                    "error-container": "#fe8983",
+                    "surface-tint": "#49607c",
+                    "tertiary-dim": "#385671",
+                    "outline-variant": "#99b5ce",
+                    "on-surface": "#183549",
+                    "tertiary-fixed-dim": "#b1cfef",
+                    "on-secondary-container": "#644e2c",
+                    "surface-container": "#e0f0ff",
+                    "on-surface-variant": "#476278",
+                    "error-dim": "#4e0309",
+                    "tertiary-fixed": "#bfddfe",
+                    "primary-fixed-dim": "#bed6f7",
+                    "on-tertiary-container": "#324f6a",
+                    "surface-dim": "#bcdefc",
+                    "on-error": "#fff7f6",
+                    "surface": "#f6f9ff",
+                    "on-primary-fixed": "#29415b",
+                    "surface-bright": "#f6f9ff",
+                    "on-primary-container": "#3c536f",
+                    "inverse-surface": "#060f16",
+                    "on-error-container": "#752121",
+                    "on-tertiary": "#f6f9ff",
+                    "surface-container-low": "#ebf5ff",
+                    "on-primary": "#f5f8ff",
+                    "primary": "#49607c",
+                    "secondary-container": "#fedeb1",
+                    "on-background": "#183549",
+                    "surface-container-highest": "#cae6ff",
+                    "on-tertiary-fixed-variant": "#3c5974",
+                    "surface-container-high": "#d5ebff",
+                    "outline": "#627e94",
+                    "tertiary-container": "#bfddfe",
+                    "secondary-dim": "#65502d",
+                    "primary-container": "#d1e4ff",
+                    "inverse-primary": "#c4dcfd",
+                    "error": "#9f403d",
+                    "surface-variant": "#cae6ff",
+                    "on-secondary-fixed": "#503c1b",
+                    "tertiary": "#45627e",
+                    "inverse-on-surface": "#959ea7",
+                    "on-secondary-fixed-variant": "#6e5834",
+                    "on-primary-fixed-variant": "#465d79",
+                    "secondary-fixed-dim": "#efd0a3",
+                    "secondary": "#725b38",
+                    "background": "#f6f9ff",
+                    "on-tertiary-fixed": "#1e3c56"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-100/80 backdrop-blur-xl">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<span class="text-xl font-bold tracking-tighter text-slate-900">EC.FINTECH</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-900 border-b-2 border-slate-900 pb-1 font-manrope tracking-tight font-semibold" href="#">Selected Works</a>
+<a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200" href="#">Domain Expertise</a>
+<a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200" href="#">Market Insights</a>
+<a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-none font-semibold text-sm scale-95 active:scale-90 transition-transform">
+                Request Resume
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="pt-40 pb-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-start">
+<div class="flex-1 space-y-8">
+<div class="inline-flex items-center gap-3 bg-surface-container px-4 py-2 rounded-full text-xs font-medium text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Page Load: 0.18s • Uptime: 99.9%
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface">
+                    結合商管思維與<br/>
+<span class="text-primary">極致性能</span>的前端開發者
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-body">
+                    NCCU Business Administration 畢業背景，專注於 Fintech 領域的高性能前端解決方案。將嚴謹的商業邏輯轉化為毫秒級響應的用戶界面，在技術深度與獲利模式之間尋求最優解。
+                </p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">React</span>
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">Next.js</span>
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">TypeScript</span>
+<span class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">Quant Analysis</span>
+</div>
+</div>
+<div class="hidden lg:block w-80 h-80 relative">
+<div class="absolute inset-0 bg-primary opacity-5 rounded-3xl rotate-6"></div>
+<div class="absolute inset-0 bg-secondary opacity-5 rounded-3xl -rotate-3"></div>
+<img alt="Fintech Visualization" class="w-full h-full object-cover grayscale brightness-90 contrast-125" data-alt="Modern minimalist aesthetic of dark trading charts on multiple clean monitors in a high-end corporate office setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcom3TPKOsT7oxR6QhqF7aJoG67_sonilIc0rwTpe-h1SJalab3IsrsKJA7P_szcOoVcYurT1wQwAP_BXagI2Y99NvZvWBsNpzuHzDORLutxKa_JJOlw6ERRGlbyVy1sJjLF6xijzy8COLNMrqJ-HGA5ulVlPxpnnTsM99k-Nss5iaG9qVrnPGkYAix2VsrwqHAmxdACXqSp4a6LbIc-sJnwIxhBYhLUunAx-wuMNgYnMTJoPjjRW9PpYrXfnB9BP5GazHZPvnOxI"/>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-surface-container-low py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex gap-12 opacity-40 grayscale">
+<span class="text-xl font-bold tracking-tighter">NCCU</span>
+<span class="text-xl font-bold tracking-tighter">INTERNSHIP.CO</span>
+<span class="text-xl font-bold tracking-tighter">AI CLUB</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+<div class="text-center md:text-left">
+<div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">Teaching Director</div>
+<div class="text-on-surface font-manrope font-bold">NCCU AI Club</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">Impact</div>
+<div class="text-on-surface font-manrope font-bold">100+ 學生</div>
+</div>
+<div class="text-center md:text-left">
+<div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">Open Source</div>
+<div class="text-on-surface font-manrope font-bold">50+ Stars</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Projects -->
+<section class="py-32 px-8 max-w-7xl mx-auto" id="works">
+<h2 class="text-3xl font-extrabold tracking-tighter mb-20 text-on-surface flex items-center gap-4">
+                Selected Projects <span class="h-[1px] flex-grow bg-outline-variant opacity-30"></span>
+</h2>
+<div class="space-y-40">
+<!-- Project 1 -->
+<div class="flex flex-col md:flex-row gap-16 items-center group">
+<div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
+<img alt="Trading Platform" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Abstract digital representation of financial market data with glowing green lines and clean white interface elements on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb_G-ysKFvg0owFSXXFXh7NHeliMyCTakKhBlkohXyfknkwXM0nqMRqXPcD2hbvJc_JMbCaWgE7zjN2h5eKPhCtflx_ddUXu9oSkdwVlN5-aHZ3rHngmn8dJ9W_UEmaWPxJ3LKbRpGq34OajHP_2x0VCedth5PwVUMW9aoXbDhgg1WaV8Z_l3Iu3oXMb4sbvSVZX5KF8Iw5IsPmCx6AlJhjD0c1U9cp1U4ON2AP9BJGGzMpAuv4j0Qo7nUJsQOYGcKCVcanY5NqF8"/>
+</div>
+<div class="flex-1 space-y-6">
+<div class="text-primary font-bold text-sm tracking-widest uppercase">Performance: API optimized 30%</div>
+<h3 class="text-4xl font-bold tracking-tight">Smart Money 交易平台</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            基於 SMC/Wave Theory 的量化交易決策平台。通過 React Server Components 與邊緣計算優化，實現了即時盤中數據的高性能渲染。
+                        </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-3 font-semibold text-sm">Demo</button>
+<button class="text-on-surface font-semibold text-sm border-b-2 border-transparent hover:border-on-surface transition-all">Case Study</button>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="flex flex-col md:flex-row-reverse gap-16 items-center group">
+<div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
+<img alt="Visualization Dashboard" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sophisticated data dashboard showing financial analytics with minimal UI design, crisp white font, and professional charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIPqyLT2r5XuT48iBYVIOufhyYFUE90DrVyhQufjZvHC86ZFswU1iBxQjfFbX12T1AbfvPOe3dgpv7t0j7d9TYqB3FZLIr7WHjfjolDf0PS10pwxWh5eoxO6ALXYKZovbVff2wIHSUpJMVmE15JoKP0zNFrfVgcDAiIxuhTLxfWz71FFGKDkIlYSctaXUbPSJ3aw5EkccT90N5cQJb3g7q6n9BPoaIUr6qGxwLOw3Sp_CCypwR2h-BEm9todASS_fYJ2i3RD4AoVg"/>
+</div>
+<div class="flex-1 space-y-6">
+<div class="text-primary font-bold text-sm tracking-widest uppercase">Lighthouse Score: 100</div>
+<h3 class="text-4xl font-bold tracking-tight">即時數據可視化儀表板</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            專為資產配置設計的高壓可視化終端。整合 K-line 圖表與多重指標運算，確保在極端市場波動下仍能保持流暢的操作體驗。
+                        </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-3 font-semibold text-sm">Demo</button>
+<button class="text-on-surface font-semibold text-sm border-b-2 border-transparent hover:border-on-surface transition-all">Case Study</button>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="flex flex-col md:flex-row gap-16 items-center group">
+<div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
+<img alt="Safe Transaction System" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Clean and secure mobile payment interface concept with high contrast typography and professional financial brand colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBenGoJkD757doI4kQ5YWF_MydL--MO68rhmw2jJP8aBoJecdcK5v84hFMOwP30W6m1lBp8M4-EyEsqpWWT0Jw37VLiF3we4bUOfVzviZaLOr1rnSFTWbdes5Snv_7Di5K6XzPCJbCCQ6w1DWwGf4hHEt5LPtKhsMx0NlxQGvKaMWhV9iULQsktk_Q8tacY7b4jJjeoqmbLkE1FPWjiZNF1TBBxjCZyDpLoz23G7fWKJMWgxmr78ut1rzq3J4d77Rjqe4NChVbVN9g"/>
+</div>
+<div class="flex-1 space-y-6">
+<div class="text-primary font-bold text-sm tracking-widest uppercase">Zero Security Vulnerabilities</div>
+<h3 class="text-4xl font-bold tracking-tight">安全全端電商系統</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            專注於高頻交易安全的電商中台架構。採用嚴格的類型檢查與防注入機制，確保每一筆交易的原子性與不可竄改性。
+                        </p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-3 font-semibold text-sm">Demo</button>
+<button class="text-on-surface font-semibold text-sm border-b-2 border-transparent hover:border-on-surface transition-all">Case Study</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Domain Expertise -->
+<section class="bg-on-surface text-on-primary py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl font-extrabold tracking-tighter mb-20">Domain Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-outline-variant/20 border border-outline-variant/20">
+<div class="bg-on-surface p-12 space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">developer_mode_tv</span>
+<h3 class="text-2xl font-bold">Frontend Engineering</h3>
+<p class="text-on-primary-fixed-variant leading-relaxed font-light">
+                            React, Next.js 核心開發。專精於 Web Vitals 優化、組件庫建構與高性能數據串流處理。
+                        </p>
+</div>
+<div class="bg-on-surface p-12 space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">account_balance</span>
+<h3 class="text-2xl font-bold">Fintech Solution</h3>
+<p class="text-on-primary-fixed-variant leading-relaxed font-light">
+                            結合商管專業與量化思維，開發自動化交易策略工具。精通金融數據可視化與資產管理邏輯。
+                        </p>
+</div>
+<div class="bg-on-surface p-12 space-y-6">
+<span class="material-symbols-outlined text-4xl text-primary-fixed">psychology</span>
+<h3 class="text-2xl font-bold">AI Application</h3>
+<p class="text-on-primary-fixed-variant leading-relaxed font-light">
+                            Prompt Engineering 實戰。深度整合 LLM API 於前端工作流，構建智能化開發與交易助手。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Market Insights -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="bg-surface-container p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<div class="max-w-3xl space-y-8">
+<div class="flex items-center gap-4 text-xs font-bold tracking-[0.2em] text-primary uppercase">
+                        Trader Mindset
+                    </div>
+<h2 class="text-3xl font-extrabold tracking-tight">前端性能如何優化交易決策？</h2>
+<p class="text-xl text-on-surface-variant italic leading-relaxed">
+                        "在毫秒必爭的金融市場，前端不再僅是介面，而是決策的延伸。100ms 的延遲可能代表著價差的流失。我們追求的極致性能，本質上是為了在資訊流中為交易者爭取最大的『認知盈餘』。"
+                    </p>
+<div class="font-manrope font-bold text-on-surface">— Market Technical Commentary</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-8 max-w-7xl mx-auto text-center space-y-12">
+<h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-on-surface">
+                正在尋找前端開發<br/>
+                實習 / 正職機會。
+            </h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
+                    索取完整技術報告與履歷
+                </button>
+<button class="bg-on-surface text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
+                    安排 15 分鐘技術面談
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-slate-200">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-manrope font-bold text-slate-900 text-lg">EC.FINTECH</div>
+<p class="font-inter text-sm tracking-wide text-slate-600">© 2024 Precision Curator Engineering. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-inter text-sm tracking-wide text-slate-600 hover:text-slate-900 transition-opacity" href="#">LinkedIn</a>
+<a class="font-inter text-sm tracking-wide text-slate-600 hover:text-slate-900 transition-opacity" href="#">GitHub</a>
+<a class="font-inter text-sm tracking-wide text-slate-600 hover:text-slate-900 transition-opacity" href="#">Technical Report</a>
+</div>
+</div>
+</footer>
+</body></html>

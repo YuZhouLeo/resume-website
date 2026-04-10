@@ -1,0 +1,21 @@
+{
+  "name": "digital-resume",
+  "version": "1.0.0",
+  "description": "Chuang Yu-Cheng's Digital Resume",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "fintech",
+    "quant"
+  ],
+  "author": "Chuang Yu-Cheng",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

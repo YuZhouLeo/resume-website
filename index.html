@@ -5,8 +5,25 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta name="description" content="莊宇正 (Chuang Yu-Cheng) 的個人數位履歷。專注於量化交易、FinTech 開發與 AI 應用，國立政治大學企業管理學系。">
+  <meta name="description" content="莊宇正 (Chuang Yu-Cheng) 的個人數位履歷。量化投資研究 × 產業基本面分析 × AI 金融工程化，國立政治大學企業管理學系三年級，GPA 4.0。">
   <title>莊宇正 | Quant Finance × FinTech</title>
+
+  <!-- Open Graph / Facebook / LINE / 104 預覽卡片 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="莊宇正 | 量化投資研究 × AI 金融工程化" />
+  <meta property="og:description" content="國立政治大學企業管理學系 · GPA 4.0 · 台股量化策略勝率 78.2%、累積報酬 527.4% · 2026 暑期實習積極尋職中" />
+  <meta property="og:image" content="./og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="莊宇正個人履歷預覽" />
+  <meta property="og:site_name" content="YC.FINTECH" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="莊宇正 | 量化投資研究 × AI 金融工程化" />
+  <meta name="twitter:description" content="國立政治大學企業管理學系 · GPA 4.0 · 台股量化策略勝率 78.2% · 2026 暑期實習積極尋職中" />
+  <meta name="twitter:image" content="./og-preview.png" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
@@ -155,6 +172,20 @@
           <span
             class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">Anthropic
             Academy</span>
+          <span class="bg-primary text-on-primary px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">金融證照
+            ×3</span>
+        </div>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="./resume.html" target="_blank"
+            class="inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-3 font-semibold text-sm hover:brightness-110 transition-all">
+            <span class="material-symbols-outlined text-base">download</span>
+            下載履歷 PDF
+          </a>
+          <a href="mailto:yuzhouleo@gmail.com"
+            class="inline-flex items-center gap-2 bg-surface-container-highest text-on-surface px-6 py-3 font-semibold text-sm hover:brightness-95 transition-all">
+            <span class="material-symbols-outlined text-base">mail</span>
+            聯絡我
+          </a>
         </div>
       </div>
       <div class="hidden lg:block w-80 h-80 relative">
@@ -251,37 +282,90 @@
         <h2 class="text-3xl font-extrabold tracking-tighter mb-20">專業領域</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-outline-variant/20 border border-outline-variant/20">
           <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">candlestick_chart</span>
-            <h3 class="text-2xl font-bold">台股交易邏輯</h3>
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">analytics</span>
+            <h3 class="text-2xl font-bold">量化投資研究</h3>
             <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              籌碼面為主，基本面為輔的交易模式。從「成交量就是一切的基石」理解到資金的流動就是第一手的消息。適當的避險，賺取個股的alpha，讓晚上有安穩的sleeping
+              具備完整的量化回測方法論：從因子建構、資料品質檢核、到 MAE/MFE 統計歸因，確保策略 alpha 可驗證、可複現。熟悉風險指標監控（MDD、Sharpe）與停損/停利機制設計。
             </p>
             <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">邏輯標籤</div>
-              <div class="text-on-primary-fixed-variant text-sm">籌碼面・ 基本面 ・ Alpha ・ 避險</div>
+              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">核心方法</div>
+              <div class="text-on-primary-fixed-variant text-sm">因子研究 ・ 回測框架 ・ 歸因分析 ・ 風險監控</div>
             </div>
           </div>
           <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">rocket_launch</span>
-            <h3 class="text-2xl font-bold">FinTech 開發</h3>
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">insights</span>
+            <h3 class="text-2xl font-bold">產業基本面分析</h3>
             <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              專注弭平市場資訊斷點。使用Antigravity進行Vibe Coding，並在其學習、開發各類程式工具。包含網路商店、綜合資產控制板、N8N等。最後利用AI工具達成槓桿產出
+              由上而下的分析框架：從總經趨勢、產業競爭格局、到個股財務結構評估與催化劑識別。能從財務三表交叉驗證企業經營實況，識別會計品質與隱藏風險，支持風險定價決策。
             </p>
             <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">使用的工具</div>
-              <div class="text-on-primary-fixed-variant text-sm">Antigravity ・ Zeabur ・ Claude Code ・ N8N</div>
+              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">分析框架</div>
+              <div class="text-on-primary-fixed-variant text-sm">總經 → 產業 → 財務 → 催化劑 → 風險定價</div>
             </div>
           </div>
           <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">psychology</span>
-            <h3 class="text-2xl font-bold">AI 教學與應用</h3>
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">smart_toy</span>
+            <h3 class="text-2xl font-bold">AI × 金融工程化</h3>
             <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              現任政大 AI 應用社教學長，主講過 5 場 AI 實務課程，累積指導 60+ 名學員。提倡從生活中尋找痛點，並且利用AI 輔助開發，提升開發效率與產出品質。
+              運用 AI 加速投研流程：研報摘要萃取、產業資訊彙整、數據管道自動化。以 Vibe Coding 快速將投資想法轉化為可部署工具，自建籌碼面 ETL Pipeline，讓例行性研究工作自動化。
             </p>
             <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">課程內容</div>
-              <div class="text-on-primary-fixed-variant text-sm">LLM 比較 ・ N8N・ Midjourney ・ AI 協作開發</div>
+              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">應用場景</div>
+              <div class="text-on-primary-fixed-variant text-sm">研報萃取 ・ ETL Pipeline ・ 自動推播 ・ 快速原型</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I Can Bring to Your Team -->
+    <section class="py-32 px-8 max-w-7xl mx-auto" id="value">
+      <div class="space-y-16">
+        <div class="space-y-4">
+          <div class="text-primary font-bold text-sm tracking-[0.2em] uppercase">What I Bring</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter text-on-surface">
+            我能為團隊貢獻什麼
+          </h2>
+          <p class="text-on-surface-variant text-lg max-w-3xl leading-relaxed">
+            不只是履歷上的標籤，而是可以直接投入團隊運作的能力。以下是我能在實習第一天就開始貢獻的事：
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="border-l-4 border-primary pl-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-3xl text-primary">query_stats</span>
+              <h3 class="text-xl font-bold tracking-tight text-on-surface">獨立執行量化因子回測全流程(Vibe Coding)</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              從原始資料蒐集、因子建構、回測建模、到績效驗證與風險歸因。曾獨立完成5年台股雙因子策略驗證，能快速協助團隊進行因子研究或策略優化。
+            </p>
+          </div>
+          <div class="border-l-4 border-primary pl-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-3xl text-primary">article</span>
+              <h3 class="text-xl font-bold tracking-tight text-on-surface">一週內產出產業研究筆記</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              涵蓋技術趨勢、競爭格局、財務結構評估與催化劑識別。曾以此框架完成光通訊產業分析並布局 Lumentum，波段獲利逾 100%，能支援研究員進行產業追蹤與投資提案準備。
+            </p>
+          </div>
+          <div class="border-l-4 border-primary pl-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-3xl text-primary">bolt</span>
+              <h3 class="text-xl font-bold tracking-tight text-on-surface">自動化例行工作(Vibe Coding)</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              以 Python 建立資料自動抓取、處理、推播流程。能協助團隊將重複性的資料整理工作自動化，把人力釋放到高價值判斷與決策。
+            </p>
+          </div>
+          <div class="border-l-4 border-primary pl-6 space-y-3">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-3xl text-primary">verified</span>
+              <h3 class="text-xl font-bold tracking-tight text-on-surface">具備即戰力的金融專業基礎</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              持有期貨商業務員、信託業業務人員、金融市場常識與職業道德三張證照，搭配 GPA 4.0 與全校初級會計學大會考班級前段（PR 90+）的財務分析能力，可即時投入需要專業基礎的業務場景。
+            </p>
           </div>
         </div>
       </div>
@@ -308,7 +392,7 @@
                 class="stat-num" data-target="29.53" data-decimals="2" data-suffix="%">29.53%</span></div>
             <h3 class="text-4xl font-bold tracking-tight">Strategy｜處置股量能過濾系統</h3>
             <p class="text-on-surface-variant leading-relaxed">
-              獨立開發的台股雙因子量化策略：以「監管處置事件」作為行為異常訊號因子，疊加「成交量 &gt; 1,000 張」作為流動性品質因子。完整執行資料蒐集清洗、因子建構、回測模型建立全流程，運用 MAE/MFE
+              獨立開發的台股雙因子量化策略：以「監管處置事件」作為行為異常訊號因子，疊加「成交量」作為流動性品質因子。完整執行資料蒐集清洗、因子建構、回測模型建立全流程，運用 MAE/MFE
               統計驗證進場品質（贏單平均 MFE 8.18% &gt; MAE 4.53%；虧單平均 MAE 7.72%），平均每筆報酬 3.85%。積極穩定交易策略，目前最大回撤控制於 -29.53%。
             </p>
             <div class="flex flex-wrap gap-3 pt-2">
@@ -350,32 +434,33 @@
             </div>
           </div>
         </div>
-        <!-- Project 3: Shareholder Platform -->
-        <div class="flex flex-col md:flex-row gap-16 items-center group">
-          <div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
-            <img alt="LINE-integrated E-commerce Platform"
-              class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-              src="./ecommerce.png" />
-          </div>
-          <div class="flex-1 space-y-6">
-            <div class="text-primary font-bold text-sm tracking-widest uppercase">Vibe Coding 全端開發 · 獨立部署上線</div>
-            <h3 class="text-4xl font-bold tracking-tight">股東會紀念品權利電商網站</h3>
-            <p class="text-on-surface-variant leading-relaxed">
-              以 Vibe Coding（AI 協作開發）獨立完成的輕量化全端電商平台，解決台灣散戶領取股東會紀念品的流程痛點。核心差異在於深度整合 LINE 生態系——透過 LINE OAuth
-              實現一鍵登入、LIFF（LINE Front-end Framework）完成無縫購買與推播通知，讓用戶在最熟悉的介面完成交易。從市場洞察、產品設計到正式部署，全程自主完成。
-            </p>
-            <div class="flex flex-wrap gap-3 pt-2">
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Vibe
-                Coding</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Claude
-                Code</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">LINE
-                OAuth · LIFF</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Zeabur</span>
+        <!-- TODO: Project 3 Placeholder - 待補上第三個金融相關專案（建議方向：籌碼面 ETL Pipeline 自動推播系統、個股深度研究報告、或總經/產業分析）-->
+
+        <!-- Other Works (compact cards) -->
+        <div class="pt-8">
+          <h3 class="text-xl font-bold tracking-tight text-on-surface mb-8 opacity-70">其他作品</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-surface-container p-8 space-y-4 hover:brightness-95 transition-all">
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex-1 space-y-2">
+                  <div class="text-primary font-bold text-xs tracking-widest uppercase">Vibe Coding · 全端開發</div>
+                  <h4 class="text-lg font-bold tracking-tight text-on-surface">股東會紀念品權利電商平台</h4>
+                </div>
+                <span class="material-symbols-outlined text-2xl text-on-surface-variant">shopping_bag</span>
+              </div>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                以 AI 協作開發獨立完成的輕量化全端電商平台，深度整合 LINE OAuth / LIFF，解決散戶領取股東會紀念品的流程痛點。從市場洞察到部署上線全程自主完成。
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">Vibe
+                  Coding</span>
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">LINE
+                  OAuth · LIFF</span>
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">Zeabur</span>
+              </div>
             </div>
           </div>
         </div>
@@ -383,7 +468,27 @@
     </section>
 
     <!-- Investment Philosophy (Market Insights) -->
-    <section class="py-32 px-8 max-w-7xl mx-auto" id="philosophy">
+    <section class="py-32 px-8 max-w-7xl mx-auto space-y-8" id="philosophy">
+      <!-- Positive Belief -->
+      <div class="bg-on-surface text-on-primary p-12 md:p-20 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-12 opacity-10">
+          <span class="material-symbols-outlined text-[120px] text-primary-fixed"
+            style="font-variation-settings: 'FILL' 1;">auto_graph</span>
+        </div>
+        <div class="max-w-3xl space-y-8">
+          <div class="flex items-center gap-4 text-xs font-bold tracking-[0.2em] text-primary-fixed uppercase">
+            Core Investment Belief
+          </div>
+          <h2 class="text-3xl font-extrabold tracking-tight">從訊號到系統：讓每一個判斷都可被驗證</h2>
+          <p class="text-xl text-on-primary-fixed-variant italic leading-relaxed">
+            "成交量是市場最誠實的語言。在任何消息被公開之前，資金的流動已經留下第一手足跡——
+            但真正的紀律，是把這些訊號轉化為可回測、可證偽的系統，而不是相信當下的直覺。
+            最好的交易決策，應該在進場之前就已經完成。"
+          </p>
+          <div class="font-manrope font-bold text-primary-fixed">— 莊宇正 · 投資信念</div>
+        </div>
+      </div>
+      <!-- Risk Reflection -->
       <div class="bg-surface-container p-12 md:p-20 relative overflow-hidden">
         <div class="absolute top-0 right-0 p-12 opacity-10">
           <span class="material-symbols-outlined text-[120px]"
@@ -428,6 +533,38 @@
               <div class="font-semibold text-on-surface">國立政治大學</div>
               <div class="text-on-surface-variant text-sm">企業管理學系 · 大學三年級 · 預計 2027 畢業</div>
               <div class="text-primary font-bold mt-1">GPA 4.0 / 4.3</div>
+            </div>
+          </div>
+          <!-- Accounting Exam Performance -->
+          <div class="bg-surface-container-low p-8 space-y-4">
+            <h3 class="text-lg font-bold tracking-tight text-on-surface">財務報表分析能力</h3>
+            <div class="space-y-3">
+              <div>
+                <div class="font-semibold text-on-surface">初級會計學大會考</div>
+                <div class="text-on-surface-variant text-xs">國立政治大學 · 全校標準化考試</div>
+              </div>
+              <div class="space-y-2 pt-2 border-t border-outline-variant/30">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-on-surface-variant">第一學期</span>
+                  <span class="text-sm font-semibold text-on-surface">班排 5-6 · PR 90-95</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-sm text-on-surface-variant">第二學期</span>
+                  <span class="text-sm font-semibold text-primary">班排 2-3 · PR 95-98</span>
+                </div>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed pt-2">
+                驗證「在複雜會計場景下快速識別企業財務真相」的能力——掌握財務三表系統性理解、會計操縱風險辨識、財務指標標準化比較。
+              </p>
+              <div class="pt-2 border-t border-outline-variant/30">
+                <div class="text-xs text-on-surface-variant uppercase tracking-widest mb-2 font-semibold">在投研工作中的應用
+                </div>
+                <ul class="text-xs text-on-surface-variant leading-relaxed space-y-1">
+                  <li>• 產業研究：從毛利率、ROE 等財務趨勢拆解產業驅動力</li>
+                  <li>• 量化因子：財務指標與籌碼面的複合因子構建</li>
+                  <li>• 個股研究：快速對企業財務健康度做出初步判斷</li>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- Certifications -->
@@ -505,21 +642,28 @@
     <!-- CTA Section -->
     <section class="py-32 px-8 max-w-7xl mx-auto text-center space-y-12">
       <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-on-surface">
-        正在尋找<br />
-        2026 暑期實習機會。
+        準備好為你的團隊帶來<br />
+        <span class="text-primary">量化研究 × AI 工程化</span>的即戰力。
       </h2>
       <p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-        量化研究 × FinTech 開發 × AI 應用——期待在實習中將學術基礎與實務環境真正接軌，
-        以積極的學習態度創造即時貢獻。
+        2026 暑期實習積極尋職中——不只是學術基礎，
+        而是可以從第一天就開始貢獻的研究能力與工具建構力。
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <a href="./resume.html" target="_blank"
+          class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
+          <span class="material-symbols-outlined">download</span>
+          下載履歷 PDF
+        </a>
         <a href="mailto:yuzhouleo@gmail.com"
-          class="bg-primary text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
+          class="inline-flex items-center justify-center gap-2 bg-on-surface text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
+          <span class="material-symbols-outlined">mail</span>
           傳送 Email 給我
         </a>
         <a href="https://github.com/YuZhouLeo/resume-website"
-          class="bg-on-surface text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all"
+          class="inline-flex items-center justify-center gap-2 bg-surface-container-highest text-on-surface px-10 py-5 font-bold tracking-tight text-lg hover:brightness-95 transition-all"
           target="_blank">
+          <span class="material-symbols-outlined">code</span>
           查看 GitHub
         </a>
       </div>

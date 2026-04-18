@@ -51,7 +51,7 @@
             "tertiary-fixed-dim": "#b1cfef",
             "on-secondary-container": "#644e2c",
             "surface-container": "#e0f0ff",
-            "on-surface-variant": "#476278",
+            "on-surface-variant": "#334155",
             "error-dim": "#4e0309",
             "tertiary-fixed": "#bfddfe",
             "primary-fixed-dim": "#bed6f7",
@@ -284,34 +284,34 @@
           <div class="bg-on-surface p-12 space-y-6">
             <span class="material-symbols-outlined text-4xl text-primary-fixed">analytics</span>
             <h3 class="text-2xl font-bold">量化投資研究</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
+            <p class="text-slate-300 leading-relaxed font-normal">
               具備完整的量化回測方法論：從因子建構、資料品質檢核、到 MAE/MFE 統計歸因，確保策略 alpha 可驗證、可複現。熟悉風險指標監控（MDD、Sharpe）與停損/停利機制設計。
             </p>
             <div class="pt-4 space-y-2">
               <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">核心方法</div>
-              <div class="text-on-primary-fixed-variant text-sm">因子研究 ・ 回測框架 ・ 歸因分析 ・ 風險監控</div>
+              <div class="text-slate-400 text-sm">因子研究 ・ 回測框架 ・ 歸因分析 ・ 風險監控</div>
             </div>
           </div>
           <div class="bg-on-surface p-12 space-y-6">
             <span class="material-symbols-outlined text-4xl text-primary-fixed">insights</span>
             <h3 class="text-2xl font-bold">產業基本面分析</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
+            <p class="text-slate-300 leading-relaxed font-normal">
               由上而下的分析框架：從總經趨勢、產業競爭格局、到個股財務結構評估與催化劑識別。能從財務三表交叉驗證企業經營實況，識別會計品質與隱藏風險，支持風險定價決策。
             </p>
             <div class="pt-4 space-y-2">
               <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">分析框架</div>
-              <div class="text-on-primary-fixed-variant text-sm">總經 → 產業 → 財務 → 催化劑 → 風險定價</div>
+              <div class="text-slate-400 text-sm">總經 → 產業 → 財務 → 催化劑 → 風險定價</div>
             </div>
           </div>
           <div class="bg-on-surface p-12 space-y-6">
             <span class="material-symbols-outlined text-4xl text-primary-fixed">smart_toy</span>
             <h3 class="text-2xl font-bold">AI × 金融工程化</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
+            <p class="text-slate-300 leading-relaxed font-normal">
               運用 AI 加速投研流程：研報摘要萃取、產業資訊彙整、數據管道自動化。以 Vibe Coding 快速將投資想法轉化為可部署工具，自建籌碼面 ETL Pipeline，讓例行性研究工作自動化。
             </p>
             <div class="pt-4 space-y-2">
               <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">應用場景</div>
-              <div class="text-on-primary-fixed-variant text-sm">研報萃取 ・ ETL Pipeline ・ 自動推播 ・ 快速原型</div>
+              <div class="text-slate-400 text-sm">研報萃取 ・ ETL Pipeline ・ 自動推播 ・ 快速原型</div>
             </div>
           </div>
         </div>
@@ -440,13 +440,17 @@
         <div class="pt-8">
           <h3 class="text-xl font-bold tracking-tight text-on-surface mb-8 opacity-70">其他作品</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-surface-container p-8 space-y-4 hover:brightness-95 transition-all">
+            <a href="https://stock-share-app.zeabur.app/" target="_blank"
+              class="block bg-surface-container p-8 space-y-4 hover:brightness-95 hover:shadow-md transition-all group relative cursor-pointer">
               <div class="flex items-start justify-between gap-4">
                 <div class="flex-1 space-y-2">
                   <div class="text-primary font-bold text-xs tracking-widest uppercase">Vibe Coding · 全端開發</div>
-                  <h4 class="text-lg font-bold tracking-tight text-on-surface">股東會紀念品權利電商平台</h4>
+                  <h4
+                    class="text-lg font-bold tracking-tight text-on-surface group-hover:text-primary transition-colors">
+                    股東會紀念品權利電商平台</h4>
                 </div>
-                <span class="material-symbols-outlined text-2xl text-on-surface-variant">shopping_bag</span>
+                <span
+                  class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">open_in_new</span>
               </div>
               <p class="text-on-surface-variant text-sm leading-relaxed">
                 以 AI 協作開發獨立完成的輕量化全端電商平台，深度整合 LINE OAuth / LIFF，解決散戶領取股東會紀念品的流程痛點。從市場洞察到部署上線全程自主完成。
@@ -461,7 +465,12 @@
                 <span
                   class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">Zeabur</span>
               </div>
-            </div>
+              <div
+                class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center justify-between text-primary opacity-60 group-hover:opacity-100 transition-opacity">
+                <span class="text-sm font-bold tracking-widest">點我過去看</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -480,7 +489,7 @@
             Core Investment Belief
           </div>
           <h2 class="text-3xl font-extrabold tracking-tight">從訊號到系統：讓每一個判斷都可被驗證</h2>
-          <p class="text-xl text-on-primary-fixed-variant italic leading-relaxed">
+          <p class="text-xl text-slate-200 italic leading-relaxed">
             "成交量是市場最誠實的語言。在任何消息被公開之前，資金的流動已經留下第一手足跡——
             但真正的紀律，是把這些訊號轉化為可回測、可證偽的系統，而不是相信當下的直覺。
             最好的交易決策，應該在進場之前就已經完成。"
@@ -499,7 +508,7 @@
             Risk Management Philosophy
           </div>
           <h2 class="text-3xl font-extrabold tracking-tight">從失敗中建立制度，而非依賴直覺</h2>
-          <p class="text-xl text-on-surface-variant italic leading-relaxed">
+          <p class="text-xl text-slate-700 italic leading-relaxed">
             "正確的產業判斷不等於正確的進場時機。2025 年初布局 ABF 載板的操作失誤，讓我理解：
             即便看好長期趨勢，仍須嚴格評估短期財務健康度與流動性風險。
             此後建立『進場即預設出場』SOP——每筆投資在進場前即確立停損條件，
@@ -541,7 +550,7 @@
             <div class="space-y-3">
               <div>
                 <div class="font-semibold text-on-surface">初級會計學大會考</div>
-                <div class="text-on-surface-variant text-xs">國立政治大學 · 全校標準化考試</div>
+                <div class="text-on-surface-variant text-xs">國立政治大學 · 全校性考試</div>
               </div>
               <div class="space-y-2 pt-2 border-t border-outline-variant/30">
                 <div class="flex items-center justify-between">

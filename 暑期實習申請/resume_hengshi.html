@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>莊宇正 履歷 — 珩石資本</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent: #2563a8;
+      --muted: #64748b;
+      --border: #d1dde8;
+      --bg-side: #f0f5fa;
+      --text: #111827;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', sans-serif;
+      font-size: 9.5pt;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    /* ── A4 wrapper ── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 0 24px rgba(0, 0, 0, .12);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--primary);
+      color: #fff;
+      padding: 22px 32px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+
+    .header-name h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -.5px;
+      line-height: 1;
+    }
+
+    .header-name .sub {
+      font-size: 9pt;
+      opacity: .75;
+      margin-top: 4px;
+      letter-spacing: .04em;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 8.5pt;
+      opacity: .85;
+      line-height: 1.8;
+    }
+
+    .header-contact a {
+      color: #b8d4f0;
+      text-decoration: none;
+    }
+
+    /* ── Body layout ── */
+    .body {
+      display: flex;
+      flex: 1;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 188px;
+      flex-shrink: 0;
+      background: var(--bg-side);
+      padding: 20px 16px;
+      border-right: 1px solid var(--border);
+    }
+
+    .sb-section {
+      margin-bottom: 18px;
+    }
+
+    .sb-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    .sb-item {
+      margin-bottom: 6px;
+    }
+
+    .sb-item .label {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .sb-item .value {
+      font-size: 8pt;
+      color: var(--muted);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .tag {
+      background: #dce8f5;
+      color: var(--primary);
+      font-size: 7.5pt;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 8pt;
+      margin-bottom: 5px;
+      color: var(--text);
+    }
+
+    .cert-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2ecc71;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .kpi-stat {
+      margin-bottom: 8px;
+    }
+
+    .kpi-stat .num {
+      font-size: 14pt;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .kpi-stat .desc {
+      font-size: 7.5pt;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    /* ── Main content ── */
+    .main {
+      flex: 1;
+      padding: 20px 26px;
+    }
+
+    .section {
+      margin-bottom: 14px;
+    }
+
+    .sec-title {
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .summary-box {
+      background: #f0f5fa;
+      border-left: 3px solid var(--accent);
+      padding: 10px 14px;
+      font-size: 8.5pt;
+      line-height: 1.65;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .exp-item {
+      margin-bottom: 11px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .exp-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .exp-date {
+      font-size: 8pt;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .exp-org {
+      font-size: 8pt;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    ul.exp-list {
+      padding-left: 14px;
+    }
+
+    ul.exp-list li {
+      font-size: 8.5pt;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+
+    ul.exp-list li strong {
+      color: var(--primary);
+    }
+
+    .result-badge {
+      display: inline-block;
+      background: #dce8f5;
+      color: var(--accent);
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 2px;
+      margin: 5px 0;
+    }
+
+    .perf-row {
+      display: flex;
+      gap: 10px;
+      background: #eef4fc;
+      padding: 7px 12px;
+      border-radius: 2px;
+      margin: 5px 0;
+    }
+
+    .perf-item {
+      text-align: center;
+    }
+
+    .perf-num {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .perf-label {
+      font-size: 7pt;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .bio {
+      font-size: 8.5pt;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-name">
+        <h1>莊宇正</h1>
+        <div class="sub">Chuang Yu-Cheng &nbsp;·&nbsp; 實習研究員申請</div>
+      </div>
+      <div class="header-contact">
+        yuzhouleo@gmail.com<br />
+        0971-750-225<br />
+        國立政治大學 企業管理學系
+      </div>
+    </header>
+
+    <div class="body">
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+
+        <div class="sb-section">
+          <div class="sb-title">學歷</div>
+          <div class="sb-item">
+            <div class="label">國立政治大學</div>
+            <div class="value">企業管理學系 三年級</div>
+            <div class="value">預計 2027 畢業</div>
+            <div style="font-size:9pt;font-weight:700;color:#2563a8;margin-top:3px;">GPA 4.0 / 4.3</div>
+          </div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-title">策略績效指標</div>
+          <div class="kpi-stat">
+            <div class="num">+527.4%</div>
+            <div class="desc">累積報酬（2020–2026）</div>
+          </div>
+          <div class="kpi-stat">
+            <div class="num">78.2%</div>
+            <div class="desc">策略勝率（N=137 筆）</div>
+          </div>
+          <div class="kpi-stat">
+            <div class="num">-29.5%</div>
+            <div class="desc">最大回撤 MDD</div>
+          </div>
+          <div class="kpi-stat">
+            <div class="num">4.30</div>
+            <div class="desc">Sharpe Ratio</div>
+          </div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-title">金融證照</div>
+          <div class="cert-item"><span class="cert-dot"></span><span>期貨商業務員</span></div>
+          <div class="cert-item"><span class="cert-dot"></span><span>信託業業務人員</span></div>
+          <div class="cert-item"><span class="cert-dot"></span><span>金融市場常識與職業道德</span></div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-title">研究工具（Vibe Coding）</div>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">yfinance</span>
+            <span class="tag">FinMind</span>
+            <span class="tag">MAE/MFE</span>
+            <span class="tag">回測框架</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-title">研究方法</div>
+          <div class="tag-list">
+            <span class="tag">事件驅動</span>
+            <span class="tag">由上而下</span>
+            <span class="tag">競爭格局</span>
+            <span class="tag">財務三表</span>
+            <span class="tag">風險定價</span>
+            <span class="tag">因子回測</span>
+          </div>
+        </div>
+
+        <div class="sb-section">
+          <div class="sb-title">語言</div>
+          <div class="sb-item">
+            <div class="label">中文</div>
+            <div class="value">母語</div>
+          </div>
+          <div class="sb-item">
+            <div class="label">英文</div>
+            <div class="value">流利（讀/寫/說）</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+
+        <!-- 核心定位 -->
+        <section class="section">
+          <div class="sec-title">研究定位 Research Profile</div>
+          <div class="summary-box">
+            量化框架 × 基本面產業研究雙軌並行。以「台股規則事件量化回測」建立策略骨架，以「由上而下產業分析」識別催化劑，最終落地為可追蹤的交易建議——這是我目前在建立的研究能力，也是珩石資本核心策略的延伸方向。
+          </div>
+        </section>
+
+        <!-- 投資研究實績 -->
+        <section class="section">
+          <div class="sec-title">研究實績 Research Track Record</div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">台股規則事件量化策略：處置股量能過濾系統（Strategy E）</span>
+              <span class="exp-date">2020 – 2026</span>
+            </div>
+            <div class="exp-org">Python · yfinance · FinMind · MAE/MFE 歸因分析 · 雙因子架構</div>
+            <ul class="exp-list">
+              <li>核心因子一：<strong>台股「監管處置事件」</strong>（規則事件驅動的行為異常訊號）× 核心因子二：成交量 > 1,000 張（流動性品質篩選）。</li>
+              <li>完整執行從原始資料蒐集、清洗、因子建構到回測驗證的全流程，運用 MAE/MFE 方法進行逐筆歸因（MFE 7.23% > MAE 5.30%）。</li>
+              <li><strong>2025 年 4 月台股系統性下跌</strong>期間，模型成功觸發零交易機制，展現規則化策略的實戰穩健性。</li>
+            </ul>
+            <div class="perf-row">
+              <div class="perf-item">
+                <div class="perf-num">+527.4%</div>
+                <div class="perf-label">累積報酬</div>
+              </div>
+              <div class="perf-item">
+                <div class="perf-num">78.2%</div>
+                <div class="perf-label">勝率</div>
+              </div>
+              <div class="perf-item">
+                <div class="perf-num">3.85%</div>
+                <div class="perf-label">平均報酬/筆</div>
+              </div>
+              <div class="perf-item">
+                <div class="perf-num">-29.5%</div>
+                <div class="perf-label">最大回撤</div>
+              </div>
+              <div class="perf-item">
+                <div class="perf-num">4.30</div>
+                <div class="perf-label">Sharpe</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">產業研究實戰：光通訊供應鏈 — Lumentum（LITE.US）</span>
+              <span class="exp-date">2025 Q4</span>
+            </div>
+            <div class="exp-org">技術驅動 → 競爭格局 → 財務評估 → 催化劑識別 → 進場決策</div>
+            <ul class="exp-list">
+              <li><strong>技術層</strong>：矽光子取代銅纜的物理限制（頻寬 × 功耗），識別不可逆的結構性轉型趨勢。</li>
+              <li><strong>競爭層</strong>：Lumentum / II-VI / Coherent 市佔格局分析，識別 Lumentum 在 AI 算力訂單中的差異化定位。</li>
+              <li><strong>財務層</strong>：毛利率趨勢、CapEx 循環評估、下游 AI 基礎設施建置對訂單能見度的影響。</li>
+              <li>研究結論支持 2025 年 12 月提前布局，<strong>達成波段獲利逾 100%</strong>，完整驗證「研究 → 決策 → 績效」鏈條。</li>
+            </ul>
+            <div class="result-badge">波段獲利 +100%｜研究驅動進場</div>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">風控演進：ABF 載板（欣興電子 3037）失敗案例</span>
+              <span class="exp-date">2025 Q1</span>
+            </div>
+            <ul class="exp-list">
+              <li>產業長期趨勢判斷正確，但短期財務健康度與籌碼面訊號未能及時應對，導致擇時錯誤。</li>
+              <li>失敗後系統化：建立「<strong>進場即預設出場</strong>」SOP，每筆投資確立停損條件，後續決策與前次損益完全脫鉤。</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 其他能力 -->
+        <section class="section">
+          <div class="sec-title">其他能力 Additional Capabilities</div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-title">政大 AI 應用社｜教學長</span>
+              <span class="exp-date">2024.09 – 至今</span>
+            </div>
+            <ul class="exp-list">
+              <li>主講 <strong>5 場</strong> AI 實務課程，累積指導 <strong>60+ 名學員</strong>；具備將複雜研究邏輯轉化為清晰表達的能力。</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 自傳 -->
+        <section class="section">
+          <div class="sec-title">為何選擇珩石資本</div>
+          <p class="bio">
+            珩石資本「台股規則事件量化 ×
+            基本面產業融合策略」的研究方向，是我一直在嘗試建立的研究架構。我開發的「處置股量能過濾系統」本質上就是台股規則事件的量化回測——以「監管處置事件」作為行為異常因子，疊加量能條件進行動能篩選——這與珩石的核心業務邏輯高度一致，意味著我不需要從零學習方向，而是直接在現有能力上做深化。
+          </p>
+          <p class="bio" style="margin-top:6px;">
+            我同樣理解珩石希望的研究成果不只是「分析報告」，而是「能直接影響策略配置的研究輸入」。Lumentum
+            產業研究案例正是這個過程的完整展現：從技術趨勢識別、競爭格局分析，到財務結構評估與進場時機判斷，最終以實際績效驗證研究品質。珩石小團隊、研究直接影響千萬級資金配置、前輩不藏私分享交易邏輯的環境，是目前我最渴望投入的實戰場域。
+          </p>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

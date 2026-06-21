@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" width="1200" height="1100">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang TC', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif; }
+    .t1 { font-size: 34px; font-weight: 600; fill: #111827; }
+    .t2 { font-size: 17px; fill: #6b7280; }
+    .ct { font-size: 19px; font-weight: 600; fill: #111827; }
+    .cb { font-size: 13.5px; fill: #374151; }
+    .num { font-size: 17px; font-weight: 700; fill: #ffffff; }
+    .tn { font-size: 15px; font-weight: 600; fill: #1f2937; }
+    .ts { font-size: 12px; fill: #9ca3af; }
+    .ft { font-size: 13px; fill: #9ca3af; }
+  </style>
+  <rect width="1200" height="1100" fill="#ffffff"/>
+  <text x="600" y="50" text-anchor="middle" class="t1">我的 Obsidian 台股知識庫　—　七層架構</text>
+  <text x="600" y="82" text-anchor="middle" class="t2">3-stage pipeline　×　26 skills　×　台股供應鏈研究主力 vault</text>
+  <g transform="translate(0,-160)">
+  <line x1="78" y1="322" x2="78" y2="1126" stroke="#d1d5db" stroke-width="1.5"/>
+  <circle cx="448" cy="322" r="4" fill="#4b5563"/>
+  <line x1="448" y1="322" x2="596" y2="322" stroke="#4b5563" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="322" x2="92" y2="322" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,313 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#f9fafb" stroke="#4b5563" stroke-width="1.3"/>
+  <text x="124" y="319" class="tn">1-raw/</text>
+  <text x="124" y="336" class="ts">Stock/ · Chat/ · 上市櫃一覽表 · 盤勢說詞表</text>
+  <rect x="600" y="262" width="560" height="120" rx="10" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <rect x="600" y="262" width="7" height="120" rx="3" fill="#4b5563"/>
+  <circle cx="648" cy="295" r="17" fill="#4b5563"/>
+  <text x="648" y="301" text-anchor="middle" class="num">1</text>
+  <text x="680" y="302" class="ct">1-raw/　原料層 · 只讀</text>
+  <line x1="680" y1="312" x2="1138" y2="312" stroke="#e5e7eb" stroke-width="1.2"/>
+  <circle cx="686" cy="330" r="2.6" fill="#4b5563"/>
+  <text x="698" y="334" class="cb">Verbatim 貼入：零改寫 / 零修 typo / 錯字留原地</text>
+  <circle cx="686" cy="352" r="2.6" fill="#4b5563"/>
+  <text x="698" y="356" class="cb">raw-capture 歸檔 · chat-router 分流 · private-chat-filter 篩私訊</text>
+  <circle cx="686" cy="374" r="2.6" fill="#4b5563"/>
+  <text x="698" y="378" class="cb">鐵律：本體只讀，僅 raw-classifier 可改檔名 + frontmatter</text>
+  <circle cx="448" cy="456" r="4" fill="#2563eb"/>
+  <line x1="448" y1="456" x2="596" y2="456" stroke="#2563eb" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="456" x2="92" y2="456" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,447 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#eff6ff" stroke="#2563eb" stroke-width="1.3"/>
+  <text x="124" y="453" class="tn">2-wiki/</text>
+  <text x="124" y="470" class="ts">台股-{代號}-* · 產業-供應鏈瓶頸-* · *.canvas</text>
+  <rect x="600" y="396" width="560" height="120" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <rect x="600" y="396" width="7" height="120" rx="3" fill="#2563eb"/>
+  <circle cx="648" cy="429" r="17" fill="#2563eb"/>
+  <text x="648" y="435" text-anchor="middle" class="num">2</text>
+  <text x="680" y="436" class="ct">2-wiki/　精煉層 · LLM-owned</text>
+  <line x1="680" y1="446" x2="1138" y2="446" stroke="#bfdbfe" stroke-width="1.2"/>
+  <circle cx="686" cy="464" r="2.6" fill="#2563eb"/>
+  <text x="698" y="468" class="cb">stock-supply-chain 外向內找瓶頸 → 節點圖 + Canvas + 個股頁</text>
+  <circle cx="686" cy="486" r="2.6" fill="#2563eb"/>
+  <text x="698" y="490" class="cb">標準化比較表（多來源平權、無分級）+ 分歧點分析</text>
+  <circle cx="686" cy="508" r="2.6" fill="#2563eb"/>
+  <text x="698" y="512" class="cb">wiki-healthcheck 只健檢（孤立 / 矛盾 / 斷鏈），不動檔</text>
+  <circle cx="448" cy="590" r="4" fill="#16a34a"/>
+  <line x1="448" y1="590" x2="596" y2="590" stroke="#16a34a" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="590" x2="92" y2="590" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,581 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.3"/>
+  <text x="124" y="587" class="tn">3-output/</text>
+  <text x="124" y="604" class="ts">研究報告-* · 每日提及 · 待確認選擇題</text>
+  <rect x="600" y="530" width="560" height="120" rx="10" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <rect x="600" y="530" width="7" height="120" rx="3" fill="#16a34a"/>
+  <circle cx="648" cy="563" r="17" fill="#16a34a"/>
+  <text x="648" y="569" text-anchor="middle" class="num">3</text>
+  <text x="680" y="570" class="ct">3-output/　交付層 · deliverables</text>
+  <line x1="680" y1="580" x2="1138" y2="580" stroke="#bbf7d0" stroke-width="1.2"/>
+  <circle cx="686" cy="598" r="2.6" fill="#16a34a"/>
+  <text x="698" y="602" class="cb">tw-research-pipeline / tw-analyst-report 產正式研究報告</text>
+  <circle cx="686" cy="620" r="2.6" fill="#16a34a"/>
+  <text x="698" y="624" class="cb">wiki-output 產報告 / Marp / Q&amp;A / matplotlib</text>
+  <circle cx="686" cy="642" r="2.6" fill="#16a34a"/>
+  <text x="698" y="646" class="cb">frank-grade-analyst 套碩元 Frank SOP 格式</text>
+  <circle cx="448" cy="724" r="4" fill="#9333ea"/>
+  <line x1="448" y1="724" x2="596" y2="724" stroke="#9333ea" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="724" x2="92" y2="724" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,715 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#faf5ff" stroke="#9333ea" stroke-width="1.3"/>
+  <text x="124" y="721" class="tn">.claude/skills/</text>
+  <text x="124" y="738" class="ts">tw-* · chat-* · stock-supply-chain · obsidian-*</text>
+  <rect x="600" y="664" width="560" height="120" rx="10" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5"/>
+  <rect x="600" y="664" width="7" height="120" rx="3" fill="#9333ea"/>
+  <circle cx="648" cy="697" r="17" fill="#9333ea"/>
+  <text x="648" y="703" text-anchor="middle" class="num">4</text>
+  <text x="680" y="704" class="ct">.claude/skills/　Skill 生態（26 個）</text>
+  <line x1="680" y1="714" x2="1138" y2="714" stroke="#e9d5ff" stroke-width="1.2"/>
+  <circle cx="686" cy="732" r="2.6" fill="#9333ea"/>
+  <text x="698" y="736" class="cb">台股 tw-* 9 子技能：畫像→產業→護城河→籌碼→情景→估值→組裝</text>
+  <circle cx="686" cy="754" r="2.6" fill="#9333ea"/>
+  <text x="698" y="758" class="cb">聊天分流：chat-router · private-chat-filter · monthly-normalizer</text>
+  <circle cx="686" cy="776" r="2.6" fill="#9333ea"/>
+  <text x="698" y="780" class="cb">Obsidian 工具：markdown · bases · canvas · cli · defuddle</text>
+  <circle cx="448" cy="858" r="4" fill="#ea580c"/>
+  <line x1="448" y1="858" x2="596" y2="858" stroke="#ea580c" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="858" x2="92" y2="858" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,849 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#fff7ed" stroke="#ea580c" stroke-width="1.3"/>
+  <text x="124" y="855" class="tn">鐵律 11 條</text>
+  <text x="124" y="872" class="ts">來源 · 標記推導 · 失效條件 · 不建議</text>
+  <rect x="600" y="798" width="560" height="120" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <rect x="600" y="798" width="7" height="120" rx="3" fill="#ea580c"/>
+  <circle cx="648" cy="831" r="17" fill="#ea580c"/>
+  <text x="648" y="837" text-anchor="middle" class="num">5</text>
+  <text x="680" y="838" class="ct">鐵律 11 條 · Iron Rules</text>
+  <line x1="680" y1="848" x2="1138" y2="848" stroke="#fed7aa" stroke-width="1.2"/>
+  <circle cx="686" cy="866" r="2.6" fill="#ea580c"/>
+  <text x="698" y="870" class="cb">每個數字要來源（^[來源:...]），無源不寫</text>
+  <circle cx="686" cy="888" r="2.6" fill="#ea580c"/>
+  <text x="698" y="892" class="cb">推導值要標記 + 附推導邏輯；瓶頸 / 情景 / 目標價 須列失效條件</text>
+  <circle cx="686" cy="910" r="2.6" fill="#ea580c"/>
+  <text x="698" y="914" class="cb">階段隔離 · 來源平權 · 不給投資建議，只給邏輯鏈與證據</text>
+  <circle cx="448" cy="992" r="4" fill="#0d9488"/>
+  <line x1="448" y1="992" x2="596" y2="992" stroke="#0d9488" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="992" x2="92" y2="992" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,983 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#f0fdfa" stroke="#0d9488" stroke-width="1.3"/>
+  <text x="124" y="989" class="tn">基礎設施</text>
+  <text x="124" y="1006" class="ts">FinMind · obsidian CLI · defuddle · sync.sh</text>
+  <rect x="600" y="932" width="560" height="120" rx="10" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.5"/>
+  <rect x="600" y="932" width="7" height="120" rx="3" fill="#0d9488"/>
+  <circle cx="648" cy="965" r="17" fill="#0d9488"/>
+  <text x="648" y="971" text-anchor="middle" class="num">6</text>
+  <text x="680" y="972" class="ct">基礎設施 · Infrastructure</text>
+  <line x1="680" y1="982" x2="1138" y2="982" stroke="#99f6e4" stroke-width="1.2"/>
+  <circle cx="686" cy="1000" r="2.6" fill="#0d9488"/>
+  <text x="698" y="1004" class="cb">FINMIND_TOKEN 取籌碼 / 月營收（Python 一律 uv run）</text>
+  <circle cx="686" cy="1022" r="2.6" fill="#0d9488"/>
+  <text x="698" y="1026" class="cb">obsidian CLI（須桌面 App 開著）· defuddle v0.18.1 清網頁</text>
+  <circle cx="686" cy="1044" r="2.6" fill="#0d9488"/>
+  <text x="698" y="1048" class="cb">sync.sh 自動 commit + push（vault backup）</text>
+  <circle cx="448" cy="1126" r="4" fill="#dc2626"/>
+  <line x1="448" y1="1126" x2="596" y2="1126" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="5,4"/>
+  <line x1="78" y1="1126" x2="92" y2="1126" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M96,1117 h6 l2,2 h9 a2,2 0 0 1 2,2 v9 a2,2 0 0 1 -2,2 h-17 a2,2 0 0 1 -2,-2 v-11 a2,2 0 0 1 2,-2 z" fill="#fef2f2" stroke="#dc2626" stroke-width="1.3"/>
+  <text x="124" y="1123" class="tn">操作中樞</text>
+  <text x="124" y="1140" class="ts">控制台.md · CLAUDE.md · memory/</text>
+  <rect x="600" y="1066" width="560" height="120" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5"/>
+  <rect x="600" y="1066" width="7" height="120" rx="3" fill="#dc2626"/>
+  <circle cx="648" cy="1099" r="17" fill="#dc2626"/>
+  <text x="648" y="1105" text-anchor="middle" class="num">7</text>
+  <text x="680" y="1106" class="ct">操作中樞 · Control Center</text>
+  <line x1="680" y1="1116" x2="1138" y2="1116" stroke="#fecaca" stroke-width="1.2"/>
+  <circle cx="686" cy="1134" r="2.6" fill="#dc2626"/>
+  <text x="698" y="1138" class="cb">控制台.md：pipeline 圖 + 各階段指令 + 全域鐵律</text>
+  <circle cx="686" cy="1156" r="2.6" fill="#dc2626"/>
+  <text x="698" y="1160" class="cb">CLAUDE.md 專案規則 · memory/ 跨 session 記憶</text>
+  <circle cx="686" cy="1178" r="2.6" fill="#dc2626"/>
+  <text x="698" y="1182" class="cb">知識庫架構-v2.md 總綱（新讀者起點）</text>
+  <text x="600" y="1226" text-anchor="middle" class="ft">snapshot 2026-06-21　·　台股供應鏈研究主力 vault　·　由 fireworks-tech-graph 產生</text>
+  </g>
+</svg>

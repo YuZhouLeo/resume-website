@@ -1,93 +1,63 @@
 <!DOCTYPE html>
-
 <html lang="zh-Hant">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta name="description" content="莊宇正 (Chuang Yu-Cheng) 的個人數位履歷。專注於量化交易、FinTech 開發與 AI 應用，國立政治大學企業管理學系。">
-  <title>莊宇正 | Quant Finance × FinTech</title>
+  <meta name="description"
+    content="莊宇正 (Chuang Yu-Cheng) 的個人數位履歷。應徵股票研究員：量化 × 基本面／個股研究 × 籌碼面，並以 AI 把研究流程工程化。國立政治大學企業管理學系三年級，GPA 4.0。" />
+  <title>莊宇正 | 股票研究員 · Quant × Fundamental × Chips</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="莊宇正 | 股票研究員（量化 × 基本面 × 籌碼，AI 工程化）" />
+  <meta property="og:description"
+    content="國立政治大學企業管理學系 · GPA 4.0 · 自建台股投研知識庫（基本面個股研究）· 量化策略勝率 78.2%／累積報酬 527.4% · 主力籌碼自動追蹤系統" />
+  <meta property="og:image" content="./screen.png" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="YC.FINTECH" />
+
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
+
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
       theme: {
         extend: {
-          "colors": {
-            "primary-dim": "#3d546f",
-            "secondary-fixed": "#fedeb1",
-            "surface-container-lowest": "#ffffff",
-            "on-secondary": "#fff8f2",
-            "primary-fixed": "#d1e4ff",
-            "error-container": "#fe8983",
-            "surface-tint": "#49607c",
-            "tertiary-dim": "#385671",
-            "outline-variant": "#99b5ce",
-            "on-surface": "#183549",
-            "tertiary-fixed-dim": "#b1cfef",
-            "on-secondary-container": "#644e2c",
-            "surface-container": "#e0f0ff",
-            "on-surface-variant": "#476278",
-            "error-dim": "#4e0309",
-            "tertiary-fixed": "#bfddfe",
-            "primary-fixed-dim": "#bed6f7",
-            "on-tertiary-container": "#324f6a",
-            "surface-dim": "#bcdefc",
-            "on-error": "#fff7f6",
-            "surface": "#f6f9ff",
-            "on-primary-fixed": "#29415b",
-            "surface-bright": "#f6f9ff",
-            "on-primary-container": "#3c536f",
-            "inverse-surface": "#060f16",
-            "on-error-container": "#752121",
-            "on-tertiary": "#f6f9ff",
-            "surface-container-low": "#ebf5ff",
-            "on-primary": "#f5f8ff",
-            "primary": "#49607c",
-            "secondary-container": "#fedeb1",
-            "on-background": "#183549",
-            "surface-container-highest": "#cae6ff",
-            "on-tertiary-fixed-variant": "#3c5974",
-            "surface-container-high": "#d5ebff",
-            "outline": "#627e94",
-            "tertiary-container": "#bfddfe",
-            "secondary-dim": "#65502d",
-            "primary-container": "#d1e4ff",
-            "inverse-primary": "#c4dcfd",
-            "error": "#9f403d",
-            "surface-variant": "#cae6ff",
-            "on-secondary-fixed": "#503c1b",
-            "tertiary": "#45627e",
-            "inverse-on-surface": "#959ea7",
-            "on-secondary-fixed-variant": "#6e5834",
-            "on-primary-fixed-variant": "#465d79",
-            "secondary-fixed-dim": "#efd0a3",
-            "secondary": "#725b38",
-            "background": "#f6f9ff",
-            "on-tertiary-fixed": "#1e3c56"
+          colors: {
+            "primary-dim": "#3d546f", "secondary-fixed": "#fedeb1", "surface-container-lowest": "#ffffff",
+            "on-secondary": "#fff8f2", "primary-fixed": "#d1e4ff", "error-container": "#fe8983",
+            "surface-tint": "#49607c", "tertiary-dim": "#385671", "outline-variant": "#99b5ce",
+            "on-surface": "#183549", "tertiary-fixed-dim": "#b1cfef", "on-secondary-container": "#644e2c",
+            "surface-container": "#e0f0ff", "on-surface-variant": "#334155", "error-dim": "#4e0309",
+            "tertiary-fixed": "#bfddfe", "primary-fixed-dim": "#bed6f7", "on-tertiary-container": "#324f6a",
+            "surface-dim": "#bcdefc", "on-error": "#fff7f6", "surface": "#f6f9ff",
+            "on-primary-fixed": "#29415b", "surface-bright": "#f6f9ff", "on-primary-container": "#3c536f",
+            "inverse-surface": "#060f16", "on-error-container": "#752121", "on-tertiary": "#f6f9ff",
+            "surface-container-low": "#ebf5ff", "on-primary": "#f5f8ff", "primary": "#49607c",
+            "secondary-container": "#fedeb1", "on-background": "#183549", "surface-container-highest": "#cae6ff",
+            "on-tertiary-fixed-variant": "#3c5974", "surface-container-high": "#d5ebff", "outline": "#627e94",
+            "tertiary-container": "#bfddfe", "secondary-dim": "#65502d", "primary-container": "#d1e4ff",
+            "inverse-primary": "#c4dcfd", "error": "#9f403d", "surface-variant": "#cae6ff",
+            "on-secondary-fixed": "#503c1b", "tertiary": "#45627e", "inverse-on-surface": "#959ea7",
+            "on-secondary-fixed-variant": "#6e5834", "on-primary-fixed-variant": "#465d79",
+            "secondary-fixed-dim": "#efd0a3", "secondary": "#725b38", "background": "#f6f9ff",
+            "on-tertiary-fixed": "#1e3c56", "accent": "#b07a2c"
           },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "fontFamily": {
-            "headline": ["Manrope"],
-            "body": ["Inter"],
-            "label": ["Inter"]
-          }
-        },
-      },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+          fontFamily: { headline: ["Manrope"], body: ["Inter"], mono: ["JetBrains Mono"] }
+        }
+      }
     }
   </script>
+
   <style>
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -99,402 +69,678 @@
 
     h1,
     h2,
-    h3 {
+    h3,
+    h4 {
       font-family: 'Manrope', 'Noto Sans TC', sans-serif;
+    }
+
+    .nums {
+      font-family: 'JetBrains Mono', monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+
+    .eq-line {
+      stroke-dasharray: 1400;
+      stroke-dashoffset: 1400;
+      transition: stroke-dashoffset 2s ease-out;
+    }
+
+    .eq-line.in {
+      stroke-dashoffset: 0;
+    }
+
+    .tg-slide.is-active {
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .eq-line {
+        stroke-dashoffset: 0;
+        transition: none;
+      }
+
+      .tg-slide {
+        transition: none;
+      }
+
+      .animate-pulse {
+        animation: none;
+      }
     }
   </style>
 </head>
 
-<body class="bg-surface text-on-surface selection:bg-primary-container">
-  <!-- TopNavBar -->
+<body class="bg-surface text-on-surface selection:bg-primary-container antialiased">
+
+  <!-- TopNav -->
   <nav class="fixed top-0 w-full z-50 bg-slate-100/80 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-      <span class="text-xl font-bold tracking-tighter text-slate-900">YC.FINTECH</span>
-      <div class="hidden md:flex gap-8 items-center">
-        <a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200"
+    <div class="max-w-7xl mx-auto px-6 md:px-8 h-16 md:h-20 flex items-center justify-between">
+      <span class="text-lg md:text-xl font-bold tracking-tighter text-slate-900">YC.FINTECH</span>
+      <div class="hidden md:flex gap-8 items-center text-sm">
+        <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#expertise">專業領域</a>
-        <a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200"
+        <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#works">精選專案</a>
-        <a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200"
-          href="#philosophy">投資哲學</a>
-        <a class="text-slate-500 font-medium font-manrope tracking-tight hover:text-slate-900 transition-colors duration-200"
+        <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
+          href="#discipline">研究紀律</a>
+        <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#about">關於我</a>
       </div>
       <a href="mailto:yuzhouleo@gmail.com"
-        class="bg-primary text-on-primary px-6 py-2.5 rounded-none font-semibold text-sm scale-95 active:scale-90 transition-transform hover:brightness-110">
-        聯絡我
-      </a>
+        class="bg-primary text-on-primary px-5 py-2 md:px-6 md:py-2.5 font-semibold text-sm scale-95 active:scale-90 transition-transform hover:brightness-110">聯絡我</a>
     </div>
   </nav>
+
   <main>
-    <!-- Hero Section -->
-    <section class="pt-40 pb-24 px-8 max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-start">
-      <div class="flex-1 space-y-8">
+    <!-- Hero -->
+    <section
+      class="pt-32 md:pt-40 pb-20 px-6 md:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+      <div class="flex-1 space-y-7 reveal">
         <div
           class="inline-flex items-center gap-3 bg-surface-container px-4 py-2 rounded-full text-xs font-medium text-on-surface-variant">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          2026 暑期實習積極尋職中
+          應徵股票研究員 · 2026 暑期實習積極尋職中
         </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.1] text-on-surface">
-          量化思維驅動的<br />
-          <span class="text-primary">金融 × 科技</span>實踐者
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter leading-[1.08] text-on-surface">
+          用基本面、量化與籌碼<br />做研究，再用 <span class="text-primary">AI 把它工程化</span>
         </h1>
-        <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-body">
-          國立政治大學企業管理學系三年級，政大人工智慧應用社-教學長，GPA 4.0。用嚴謹的量化回測方法設計台股處置股選股系統（勝率 78.2%、累積單利報酬 527.4%（2020年起）），並以 Vibe Coding
-          開發落地 FinTech 產品。
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+          政治大學企業管理學系三年級，政大 AI 應用社教學長，GPA 4.0。我從<strong class="text-on-surface">基本面、量化、籌碼</strong>三個角度研究台股，每一塊都讓 AI
+          幫我做得更快也更有紀律：核心是一座自建的投研知識庫，把個股研究系統化、又追得到來源；並且有一個量化策略回測勝率
+          <span class="nums font-semibold text-on-surface">78.2%</span>、累積報酬
+          <span class="nums font-semibold text-on-surface">+527.4%</span>，再加上一套每天自動追蹤主力籌碼的系統。除了研究，我也用 AI
+          把各種需求直接做成可用的產品，像 <strong class="text-on-surface">OpenStock</strong> 投研儀表板就是這樣從零做出來的。
         </p>
-        <div class="flex flex-wrap gap-3">
+        <div class="flex flex-wrap gap-2">
           <span
-            class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">BA</span>
+            class="bg-surface-container-highest px-3 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant">BA
+            · NCCU</span>
           <span
-            class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">GPA
+            class="bg-surface-container-highest px-3 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant nums">GPA
             4.0 / 4.3</span>
           <span
-            class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">Python
-            · yfinance · FinMind</span>
-          <span
-            class="bg-surface-container-highest px-4 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant tracking-wide">Anthropic
-            Academy</span>
+            class="bg-surface-container-highest px-3 py-1.5 rounded-full text-xs font-semibold text-on-surface-variant">Python
+            · FinMind</span>
+          <span class="bg-primary text-on-primary px-3 py-1.5 rounded-full text-xs font-semibold">金融證照 ×3</span>
+        </div>
+        <div class="flex flex-wrap gap-3 pt-1">
+          <a href="mailto:yuzhouleo@gmail.com"
+            class="inline-flex items-center gap-2 bg-primary text-on-primary px-6 py-3 font-semibold text-sm hover:brightness-110 transition-all">
+            <span class="material-symbols-outlined text-base">mail</span>聯絡我</a>
+          <a href="https://github.com/YuZhouLeo" target="_blank"
+            class="inline-flex items-center gap-2 bg-surface-container-highest text-on-surface px-6 py-3 font-semibold text-sm hover:brightness-95 transition-all">
+            <span class="material-symbols-outlined text-base">code</span>看我的 GitHub</a>
         </div>
       </div>
-      <div class="hidden lg:block w-80 h-80 relative">
-        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-          <defs>
-            <linearGradient id="eqFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#49607c" stop-opacity="0.22" />
-              <stop offset="100%" stop-color="#49607c" stop-opacity="0.02" />
-            </linearGradient>
-            <linearGradient id="ddFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#ef4444" stop-opacity="0.04" />
-              <stop offset="100%" stop-color="#ef4444" stop-opacity="0.32" />
-            </linearGradient>
-          </defs>
-          <!-- Header -->
-          <text x="8" y="11" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.7"
-            letter-spacing="0.08em">STRATEGY · BACKTEST 2020–2026</text>
-          <text x="237" y="11" font-family="Manrope,sans-serif" font-size="13" font-weight="800"
-            fill="#49607c">+527.4%</text>
-          <text x="8" y="20" font-family="Inter,sans-serif" font-size="7" fill="#476278" opacity="0.55">N=137 · 勝率
-            78.20% · Sharpe 4.30 · MDD -29.53%</text>
-          <!-- Grid lines (equity) at 100% / 200% / 300% / 400% intervals -->
-          <line x1="8" y1="190" x2="311" y2="190" stroke="#99b5ce" stroke-width="0.6" opacity="0.65" />
-          <line x1="8" y1="158" x2="311" y2="158" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5"
-            opacity="0.28" />
-          <line x1="8" y1="126" x2="311" y2="126" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5"
-            opacity="0.28" />
-          <line x1="8" y1="95" x2="311" y2="95" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5"
-            opacity="0.28" />
-          <line x1="8" y1="63" x2="311" y2="63" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5"
-            opacity="0.28" />
-          <!-- Equity fill area (all 75 monthly data points Jan 2020 – Mar 2026) -->
-          <polygon
-            points="8,190 12,187 16,181 20,177 24,166 29,172 33,164 37,159 41,156 45,153 49,153 53,142 57,141 61,136 66,129 70,117 74,113 78,110 82,107 86,107 90,107 94,109 98,106 102,107 107,107 111,107 115,104 119,101 123,93 127,93 131,96 135,96 139,95 143,92 147,92 152,92 156,92 160,92 164,89 168,87 172,84 176,84 180,78 184,78 188,78 192,79 197,79 201,79 205,79 209,79 213,78 217,76 221,75 225,72 229,57 233,57 238,57 242,57 246,57 250,53 254,51 258,51 262,51 266,51 270,51 274,51 279,51 283,49 287,47 291,44 295,40 299,35 303,28 307,27 311,22 311,190"
-            fill="url(#eqFill)" />
-          <!-- Equity curve line -->
-          <polyline
-            points="8,190 12,187 16,181 20,177 24,166 29,172 33,164 37,159 41,156 45,153 49,153 53,142 57,141 61,136 66,129 70,117 74,113 78,110 82,107 86,107 90,107 94,109 98,106 102,107 107,107 111,107 115,104 119,101 123,93 127,93 131,96 135,96 139,95 143,92 147,92 152,92 156,92 160,92 164,89 168,87 172,84 176,84 180,78 184,78 188,78 192,79 197,79 201,79 205,79 209,79 213,78 217,76 221,75 225,72 229,57 233,57 238,57 242,57 246,57 250,53 254,51 258,51 262,51 266,51 270,51 274,51 279,51 283,49 287,47 291,44 295,40 299,35 303,28 307,27 311,22"
-            fill="none" stroke="#49607c" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" />
-          <!-- Drawdown label + baseline -->
-          <text x="8" y="199" font-family="Inter,sans-serif" font-size="6.5" fill="#476278"
-            opacity="0.5">Drawdown</text>
-          <line x1="8" y1="200" x2="311" y2="200" stroke="#99b5ce" stroke-width="0.5" opacity="0.5" />
-          <!-- Drawdown fill (scaled to monthly peak-to-trough, deepest = Jun 2020 at −11.1%) -->
-          <polygon
-            points="8,200 24,200 29,275 33,200 90,200 94,213 98,200 102,206 111,206 115,200 127,200 131,216 135,216 139,212 143,200 192,200 197,206 205,206 209,200 311,200"
-            fill="url(#ddFill)" />
-          <!-- Drawdown curve line -->
-          <polyline
-            points="8,200 24,200 29,275 33,200 90,200 94,213 98,200 102,206 111,206 115,200 127,200 131,216 135,216 139,212 143,200 192,200 197,206 205,206 209,200 311,200"
-            fill="none" stroke="#ef4444" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"
-            opacity="0.7" />
-          <!-- Year axis labels (Jan of each year) -->
-          <text x="8" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2020</text>
-          <text x="57" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2021</text>
-          <text x="107" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2022</text>
-          <text x="156" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2023</text>
-          <text x="205" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2024</text>
-          <text x="254" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2025</text>
-          <text x="299" y="294" font-family="Inter,sans-serif" font-size="7.5" fill="#476278" opacity="0.65">2026</text>
-        </svg>
+
+      <!-- Data-as-art: 投研知識庫 StockChain（主打） -->
+      <div class="w-full lg:w-[380px] shrink-0 reveal">
+        <div class="bg-on-surface text-on-primary p-5">
+          <div class="flex items-baseline justify-between mb-1">
+            <span class="text-[10px] tracking-[0.12em] text-primary-fixed/70 nums">KNOWLEDGE BASE · STOCKCHAIN</span>
+            <span class="text-2xl font-extrabold text-primary-fixed nums">300+</span>
+          </div>
+          <div class="text-[10px] text-slate-400 mb-4">可追溯來源的個股 + 產業研究檔案</div>
+
+          <!-- 三階段 AI 知識管線 -->
+          <div class="flex items-stretch gap-1 mb-4 text-center">
+            <div class="flex-1 bg-white/5 py-2 px-1">
+              <div class="text-[9px] text-slate-400 nums tracking-wide">1-RAW</div>
+              <div class="text-[11px] font-semibold mt-0.5">收料</div>
+            </div>
+            <div class="flex items-center text-primary-fixed/50"><span
+                class="material-symbols-outlined text-sm">chevron_right</span></div>
+            <div class="flex-1 bg-white/5 py-2 px-1">
+              <div class="text-[9px] text-slate-400 nums tracking-wide">2-WIKI</div>
+              <div class="text-[11px] font-semibold mt-0.5">精煉</div>
+            </div>
+            <div class="flex items-center text-primary-fixed/50"><span
+                class="material-symbols-outlined text-sm">chevron_right</span></div>
+            <div class="flex-1 bg-white/5 py-2 px-1">
+              <div class="text-[9px] text-slate-400 nums tracking-wide">3-OUTPUT</div>
+              <div class="text-[11px] font-semibold mt-0.5">出報告</div>
+            </div>
+          </div>
+
+          <!-- 檔案組成 -->
+          <div>
+            <div class="flex justify-between text-[10px] mb-1.5"><span class="text-slate-400">檔案組成</span><span
+                class="text-slate-400">個股研究 · 產業／供應鏈</span></div>
+            <div class="flex h-2 gap-0.5">
+              <div class="bg-primary-fixed/80" style="width:84%"></div>
+              <div class="bg-primary-fixed/35" style="width:16%"></div>
+            </div>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-white/10 grid grid-cols-3 gap-2 text-center">
+            <div>
+              <div class="text-xl font-extrabold text-primary-fixed nums">26</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">自訂 skills</div>
+            </div>
+            <div>
+              <div class="text-xl font-extrabold text-primary-fixed nums">2</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">供應鏈地圖</div>
+            </div>
+            <div>
+              <div class="text-xl font-extrabold text-primary-fixed nums">100%</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">來源可溯</div>
+            </div>
+          </div>
+        </div>
+        <p class="text-[11px] text-on-surface-variant mt-2 px-1">個人投研知識庫 · 三階段 AI 知識管線（收料 → 精煉 → 出報告）</p>
       </div>
     </section>
 
-    <!-- Student Identity Bar -->
-    <section class="bg-surface-container-low py-12 px-8">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-        <div class="flex gap-12 opacity-40 grayscale">
-          <span class="text-xl font-bold tracking-tighter">NCCU</span>
-          <span class="text-xl font-bold tracking-tighter">BA</span>
-          <span class="text-xl font-bold tracking-tighter">NCCU AIC</span>
+    <!-- Key metrics strip -->
+    <section class="bg-on-surface text-on-primary">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10" id="metricStrip">
+        <div class="p-6 md:p-8">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-fixed nums"><span class="stat-num"
+              data-target="300" data-decimals="0" data-suffix="+">300+</span></div>
+          <div class="text-xs text-slate-400 mt-1 tracking-wide">投研知識庫研究檔案（基本面）</div>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-fixed nums"><span class="stat-num"
+              data-target="78.20" data-decimals="2" data-suffix="%">78.20%</span></div>
+          <div class="text-xs text-slate-400 mt-1 tracking-wide">策略勝率（量化）</div>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-fixed nums">+<span class="stat-num"
+              data-target="527.40" data-decimals="1" data-suffix="%">527.4%</span></div>
+          <div class="text-xs text-slate-400 mt-1 tracking-wide">累積報酬（2020–2026）</div>
+        </div>
+        <div class="p-6 md:p-8">
+          <div class="text-3xl md:text-4xl font-extrabold text-primary-fixed nums"><span class="stat-num"
+              data-target="3" data-decimals="0" data-suffix="">3</span></div>
+          <div class="text-xs text-slate-400 mt-1 tracking-wide">主力分點每日自動追蹤（籌碼）</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student identity bar -->
+    <section class="bg-surface-container-low py-10 px-6 md:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex gap-10 opacity-40 grayscale">
+          <span class="text-lg font-bold tracking-tighter">NCCU</span>
+          <span class="text-lg font-bold tracking-tighter">BA</span>
+          <span class="text-lg font-bold tracking-tighter">NCCU AIC</span>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div class="text-center md:text-left">
-            <div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">University</div>
-            <div class="text-on-surface font-manrope font-bold">國立政治大學</div>
-          </div>
-          <div class="text-center md:text-left">
-            <div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">Department · GPA
+            <div class="text-on-surface-variant text-[10px] uppercase tracking-widest font-semibold mb-1">University
             </div>
-            <div class="text-on-surface font-manrope font-bold">企業管理學系 · 4.0</div>
+            <div class="font-bold">國立政治大學</div>
           </div>
           <div class="text-center md:text-left">
-            <div class="text-on-surface-variant text-xs uppercase tracking-widest font-semibold mb-1">Student Role</div>
-            <div class="text-on-surface font-manrope font-bold">AI 應用社 教學長</div>
+            <div class="text-on-surface-variant text-[10px] uppercase tracking-widest font-semibold mb-1">Department ·
+              GPA</div>
+            <div class="font-bold">企業管理學系 · <span class="nums">4.0</span></div>
+          </div>
+          <div class="text-center md:text-left">
+            <div class="text-on-surface-variant text-[10px] uppercase tracking-widest font-semibold mb-1">Student Role
+            </div>
+            <div class="font-bold">AI 應用社 教學長</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Domain Expertise -->
-    <section class="bg-on-surface text-on-primary py-32 px-8" id="expertise">
+    <!-- Domain expertise -->
+    <section class="bg-on-surface text-on-primary py-24 md:py-32 px-6 md:px-8" id="expertise">
       <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl font-extrabold tracking-tighter mb-20">專業領域</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-outline-variant/20 border border-outline-variant/20">
-          <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">candlestick_chart</span>
-            <h3 class="text-2xl font-bold">台股交易邏輯</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              籌碼面為主，基本面為輔的交易模式。從「成交量就是一切的基石」理解到資金的流動就是第一手的消息。適當的避險，賺取個股的alpha，讓晚上有安穩的sleeping
-            </p>
-            <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">邏輯標籤</div>
-              <div class="text-on-primary-fixed-variant text-sm">籌碼面・ 基本面 ・ Alpha ・ 避險</div>
+        <h2 class="text-3xl font-extrabold tracking-tighter mb-4 reveal">股票研究三大支柱</h2>
+        <p class="text-slate-400 mb-12 md:mb-16 reveal">量化、基本面、籌碼。這三塊我都靠 AI 把例行工序自動化，把時間留給真正需要判斷的部分。</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-outline-variant/20">
+          <div class="bg-on-surface p-8 md:p-12 space-y-5 reveal">
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">analytics</span>
+            <h3 class="text-2xl font-bold">量化研究</h3>
+            <p class="text-slate-300 leading-relaxed">從因子建構、資料品質檢核到 MAE/MFE 統計歸因，整套回測流程自己跑過一遍，確認 alpha
+              真的複製得出來、不是過度擬合。風險端則盯著 MDD 和 Sharpe，並把停損停利寫成明確規則。</p>
+            <div class="pt-3 space-y-1">
+              <div class="text-primary-fixed text-[10px] tracking-widest font-bold uppercase">核心方法</div>
+              <div class="text-slate-400 text-sm">因子研究 ・ 回測框架 ・ 歸因分析 ・ 風險監控</div>
             </div>
           </div>
-          <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">rocket_launch</span>
-            <h3 class="text-2xl font-bold">FinTech 開發</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              專注弭平市場資訊斷點。使用Antigravity進行Vibe Coding，並在其學習、開發各類程式工具。包含網路商店、綜合資產控制板、N8N等。最後利用AI工具達成槓桿產出
-            </p>
-            <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">使用的工具</div>
-              <div class="text-on-primary-fixed-variant text-sm">Antigravity ・ Zeabur ・ Claude Code ・ N8N</div>
+          <div class="bg-on-surface p-8 md:p-12 space-y-5 reveal">
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">insights</span>
+            <h3 class="text-2xl font-bold">基本面 · 個股研究</h3>
+            <p class="text-slate-300 leading-relaxed">
+              由上而下做研究：先看總經和產業競爭格局，再評估個股的財務結構、抓出催化劑。我習慣拿財務三表互相對照，找出帳面上看不出來的會計品質問題和隱藏風險，最後回到合理的風險定價。</p>
+            <div class="pt-3 space-y-1">
+              <div class="text-primary-fixed text-[10px] tracking-widest font-bold uppercase">分析框架</div>
+              <div class="text-slate-400 text-sm">總經 → 產業 → 財務 → 催化劑 → 風險定價</div>
             </div>
           </div>
-          <div class="bg-on-surface p-12 space-y-6">
-            <span class="material-symbols-outlined text-4xl text-primary-fixed">psychology</span>
-            <h3 class="text-2xl font-bold">AI 教學與應用</h3>
-            <p class="text-on-primary-fixed-variant leading-relaxed font-light">
-              現任政大 AI 應用社教學長，主講過 5 場 AI 實務課程，累積指導 60+ 名學員。提倡從生活中尋找痛點，並且利用AI 輔助開發，提升開發效率與產出品質。
-            </p>
-            <div class="pt-4 space-y-2">
-              <div class="text-primary-fixed text-xs tracking-widest font-bold uppercase">課程內容</div>
-              <div class="text-on-primary-fixed-variant text-sm">LLM 比較 ・ N8N・ Midjourney ・ AI 協作開發</div>
+          <div class="bg-on-surface p-8 md:p-12 space-y-5 reveal">
+            <span class="material-symbols-outlined text-4xl text-primary-fixed">hub</span>
+            <h3 class="text-2xl font-bold">籌碼面 × AI 自動化</h3>
+            <p class="text-slate-300 leading-relaxed">從主力分點和權證還原，追蹤資金往哪裡去。研報萃取、資料蒐集、每天推播這些重複的事，我用 Vibe Coding
+              寫成程式自己跑，背後接著一座投研知識庫和一條籌碼資料管線。</p>
+            <div class="pt-3 space-y-1">
+              <div class="text-primary-fixed text-[10px] tracking-widest font-bold uppercase">應用場景</div>
+              <div class="text-slate-400 text-sm">分點追蹤 ・ 研報萃取 ・ 資料管線 ・ 自動推播</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Selected Projects -->
-    <section class="py-32 px-8 max-w-7xl mx-auto" id="works">
-      <h2 class="text-3xl font-extrabold tracking-tighter mb-20 text-on-surface flex items-center gap-4">
-        精選專案 <span class="h-[1px] flex-grow bg-outline-variant opacity-30"></span>
+    <!-- Selected projects -->
+    <section class="py-24 md:py-32 px-6 md:px-8 max-w-7xl mx-auto" id="works">
+      <h2 class="text-3xl font-extrabold tracking-tighter mb-16 md:mb-20 flex items-center gap-4 reveal">
+        精選專案 <span class="h-px flex-grow bg-outline-variant opacity-30"></span>
       </h2>
-      <div class="space-y-40">
-        <!-- Project 1: Strategy -->
-        <div class="flex flex-col md:flex-row gap-16 items-center group">
-          <div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
-            <img alt="Quantitative Trading Strategy"
-              class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb_G-ysKFvg0owFSXXFXh7NHeliMyCTakKhBlkohXyfknkwXM0nqMRqXPcD2hbvJc_JMbCaWgE7zjN2h5eKPhCtflx_ddUXu9oSkdwVlN5-aHZ3rHngmn8dJ9W_UEmaWPxJ3LKbRpGq34OajHP_2x0VCedth5PwVUMW9aoXbDhgg1WaV8Z_l3Iu3oXMb4sbvSVZX5KF8Iw5IsPmCx6AlJhjD0c1U9cp1U4ON2AP9BJGGzMpAuv4j0Qo7nUJsQOYGcKCVcanY5NqF8" />
+      <div class="space-y-28 md:space-y-40">
+
+        <!-- Project 1: StockChain（主打）— 拆成「運作流程（說明）」+「七層架構圖」兩塊分開放 -->
+        <div class="space-y-10 md:space-y-12 reveal">
+          <!-- 上：描述 + 運作流程三步 -->
+          <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+            <div class="flex-1 space-y-5">
+              <div class="text-accent font-bold text-xs tracking-widest uppercase">主打 · 基本面 · 個股研究 × AI</div>
+              <h3 class="text-3xl md:text-4xl font-bold tracking-tight">StockChain｜個人投研知識庫系統</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                以前看過的券商報告、新聞、群組裡的消息，散在各個聊天室和資料夾，過一陣子就忘了，更麻煩的是事後忘了某個數字當初是哪來的。所以我替自己蓋了一座投資研究資料庫，把這些全收進來，整理成<strong
+                  class="text-on-surface">查得到、又追得回原始出處</strong>的研究檔——現在想看某一檔股票，關於它的一切一問就全攤在面前，不必再到處翻。目前累積 300+
+                檔台股個股與產業研究，還畫了光通訊、重電等等的供應鏈地圖。說穿了，就是把一個嚴謹研究員的工作方法，寫成一條可以重複跑的流程。</p>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">投研知識管理</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">供應鏈分析</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">FinMind
+                  數據串接</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Vibe
+                  Coding</span>
+              </div>
+            </div>
+            <!-- 運作流程 · 三步（原生 HTML 說明） -->
+            <div class="w-full md:w-[42%] shrink-0 bg-surface-container-low p-6 md:p-7">
+              <div class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-5">運作流程 · 三步</div>
+              <ol class="space-y-5">
+                <li class="flex gap-4">
+                  <span
+                    class="shrink-0 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold nums">1</span>
+                  <div>
+                    <div class="font-bold tracking-tight">收料 <span class="text-on-surface-variant font-normal text-sm">·
+                        1-raw 原料層</span></div>
+                    <div class="text-on-surface-variant text-sm leading-relaxed mt-0.5">
+                      每天讀到的券商報告、新聞、法說會資料自動歸檔、貼標籤，原文照收不改寫。</div>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="shrink-0 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold nums">2</span>
+                  <div>
+                    <div class="font-bold tracking-tight">精煉 <span class="text-on-surface-variant font-normal text-sm">·
+                        2-wiki 精煉層</span></div>
+                    <div class="text-on-surface-variant text-sm leading-relaxed mt-0.5">用 AI
+                      萃取每份資料重點，整理成個股／產業檔，並畫出供應鏈地圖、標出誰卡關誰受惠。</div>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="shrink-0 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-bold nums">3</span>
+                  <div>
+                    <div class="font-bold tracking-tight">出報告 <span
+                        class="text-on-surface-variant font-normal text-sm">· 3-output 交付層</span></div>
+                    <div class="text-on-surface-variant text-sm leading-relaxed mt-0.5">
+                      需要時一鍵把零散筆記彙整成結構完整、每個數字都附來源的個股研究報告。</div>
+                  </div>
+                </li>
+              </ol>
+            </div>
           </div>
-          <div class="flex-1 space-y-6">
-            <div class="text-primary font-bold text-sm tracking-widest uppercase" id="strategy-stats">勝率 <span
-                class="stat-num" data-target="78.20" data-decimals="2" data-suffix="%">78.20%</span> · 累積報酬 +<span
-                class="stat-num" data-target="527.40" data-decimals="2" data-suffix="%">527.40%</span> · 平均報酬 +<span
-                class="stat-num" data-target="3.85" data-decimals="2" data-suffix="%">3.85%</span> · MDD -<span
-                class="stat-num" data-target="29.53" data-decimals="2" data-suffix="%">29.53%</span></div>
-            <h3 class="text-4xl font-bold tracking-tight">Strategy｜處置股量能過濾系統</h3>
+          <!-- 下：完整知識庫七層架構圖（可點擊放大） -->
+          <div>
+            <div class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-4">完整知識庫架構 · 七層</div>
+            <a href="./stockchain-arch.svg" target="_blank" class="block bg-on-surface p-4 md:p-8 group"
+              aria-label="開啟知識庫七層架構大圖">
+              <img src="./stockchain-arch.svg" alt="StockChain 台股知識庫七層架構（原料層／精煉層／交付層／Skill 生態／鐵律／基礎設施／操作中樞）"
+                loading="lazy"
+                class="w-full max-h-[720px] object-contain mx-auto bg-white group-hover:brightness-105 transition" />
+              <div class="text-[10px] text-slate-500 nums mt-3 text-center flex items-center justify-center gap-1">
+                <span class="material-symbols-outlined text-xs">zoom_in</span>七層架構 · 點擊看大圖
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: OpenStock 投研儀表板（全端 · AI 開發）-->
+        <div class="flex flex-col md:flex-row-reverse gap-10 md:gap-16 items-center reveal" id="openstock">
+          <div class="w-full md:w-3/5">
+            <a href="https://github.com/YuZhouLeo/dashboard" target="_blank"
+              class="block bg-on-surface p-4 md:p-6 group" aria-label="開啟 OpenStock 投研儀表板 GitHub">
+              <img src="./openstock.png" alt="OpenStock 投研儀表板（台美股行情、處置股 ML 預測、三家券商持倉整合）" loading="lazy"
+                class="w-full h-[260px] sm:h-[340px] object-cover object-top group-hover:brightness-105 transition" />
+              <div class="mt-5 pt-4 border-t border-white/10 grid grid-cols-3 gap-2 text-center">
+                <div>
+                  <div class="text-xl font-extrabold text-primary-fixed nums">56</div>
+                  <div class="text-[10px] text-slate-400 mt-0.5">單元測試</div>
+                </div>
+                <div>
+                  <div class="text-xl font-extrabold text-primary-fixed nums">3</div>
+                  <div class="text-[10px] text-slate-400 mt-0.5">跨語言微服務</div>
+                </div>
+                <div>
+                  <div class="text-xl font-extrabold text-primary-fixed nums">2</div>
+                  <div class="text-[10px] text-slate-400 mt-0.5">市場（台／美股）</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="flex-1 space-y-5">
+            <div class="text-accent font-bold text-xs tracking-widest uppercase">全端投研平台 · 生產級 · AI 開發</div>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight">OpenStock 投研儀表板</h3>
             <p class="text-on-surface-variant leading-relaxed">
-              獨立開發的台股雙因子量化策略：以「監管處置事件」作為行為異常訊號因子，疊加「成交量 &gt; 1,000 張」作為流動性品質因子。完整執行資料蒐集清洗、因子建構、回測模型建立全流程，運用 MAE/MFE
-              統計驗證進場品質（贏單平均 MFE 8.18% &gt; MAE 4.53%；虧單平均 MAE 7.72%），平均每筆報酬 3.85%。積極穩定交易策略，目前最大回撤控制於 -29.53%。
-            </p>
-            <div class="flex flex-wrap gap-3 pt-2">
+              我用 AI 從零開發的全端投研平台，把台美股行情、處置股 ML
+              預測、三家券商的持倉與交易紀錄整合進同一個儀表板——輸入股號就能拿到模型給的機率和關鍵驅動因子。前端到資料庫一條龍用 Next.js + MongoDB
+              寫成，補上 56 個單元測試守住品質，還串了三個跨語言微服務去接券商 API。從一句需求到可部署的產品，整段都是我跟 AI 一起做出來的。</p>
+            <div class="flex flex-wrap gap-2 pt-1">
               <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Python</span>
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Next.js
+                · TypeScript</span>
               <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">yfinance</span>
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">MongoDB</span>
               <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">FinMind</span>
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">LightGBM
+                預測</span>
               <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">MAE/MFE
-                歸因分析</span>
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">券商
+                API 整合</span>
+            </div>
+            <a href="https://github.com/YuZhouLeo/dashboard" target="_blank"
+              class="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:gap-3 transition-all">
+              <span class="material-symbols-outlined text-base">open_in_new</span>到 GitHub 看專案
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Telegram chips bot -->
+        <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-center reveal" id="tgCarousel">
+          <!-- Carousel: 截圖比例不一，用固定高相框 + object-contain 置中，任何比例都不變形 -->
+          <div class="w-full md:w-3/5">
+            <div class="bg-on-surface p-4 md:p-6">
+              <div class="tg-frame relative h-[360px] sm:h-[460px]">
+                <!-- 要新增功能截圖：複製一個 <figure class="tg-slide"> 即可，圓點與計數會自動更新 -->
+                <figure
+                  class="tg-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300"
+                  data-title="每日分點買賣超 TOP 10"
+                  data-desc="收盤後自動抓主力分點（圖為富邦新店 9661）當天買超、賣超各前 10 名，只留金額 1000 萬以上的標的、把零碎雜訊濾掉，一眼看出大錢今天往哪押。">
+                  <img src="./tg-brokers.png" alt="每日分點買賣超 TOP 10" loading="lazy"
+                    class="max-h-full max-w-full object-contain shadow-lg" />
+                </figure>
+                <figure
+                  class="tg-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300"
+                  data-title="主力卡位 → 自動進觀察名單"
+                  data-desc="雙分點 10 日合計買超超過 5 億的標的，會自動進「股票觀察名單」，之後每天累計追蹤，直到買超退到 2 億以下才提醒出場；權證另有一條獨立門檻的名單。整個進出場邏輯是寫死的狀態機，不靠當天心情。">
+                  <img src="./tg-watchlist.png" alt="主力卡位自動追蹤觀察名單" loading="lazy"
+                    class="max-h-full max-w-full object-contain shadow-lg" />
+                </figure>
+                <figure
+                  class="tg-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300"
+                  data-title="台股 VIX 波動率盤後推播"
+                  data-desc="另一支獨立模組，每天收盤後推台股 VIX 指數和漲跌幅，並標出市場現在落在恐慌、緊張還是中性區間，盤後幾秒就抓到整體情緒溫度。">
+                  <img src="./tg-vix.png" alt="台股 VIX 波動率盤後推播" loading="lazy"
+                    class="max-h-full max-w-full object-contain shadow-lg" />
+                </figure>
+                <button type="button" aria-label="上一張"
+                  class="tg-prev absolute left-1 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/25 text-primary-fixed transition-colors">
+                  <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button type="button" aria-label="下一張"
+                  class="tg-next absolute right-1 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/25 text-primary-fixed transition-colors">
+                  <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+              </div>
+              <div class="tg-dots flex justify-center gap-2 mt-4"></div>
+            </div>
+          </div>
+          <div class="flex-1 space-y-5">
+            <div class="text-accent font-bold text-xs tracking-widest uppercase">籌碼面 · AI 自動化</div>
+            <h3 class="text-3xl md:text-4xl font-bold tracking-tight">Telegram 主力籌碼追蹤機器人</h3>
+            <div class="bg-surface-container-low p-5 space-y-1.5 min-h-[160px] md:min-h-[150px]">
+              <div class="text-[10px] text-primary font-bold tracking-widest uppercase nums tg-feat-no"></div>
+              <h4 class="text-lg font-bold tracking-tight tg-feat-title"></h4>
+              <p class="text-on-surface-variant text-sm leading-relaxed tg-feat-desc"></p>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed text-sm">三家主力分點（富邦新店、永豐金內湖、元大松江）的買賣超我每天自動抓，整套掛在 GitHub
+              Actions 免費排程上自己跑，不用自架伺服器，我還能直接在 Telegram 傳訊息加減觀察名單。原本每天得手動盯的分點，現在變成一份準時送到手機、進出場門檻都寫清楚的日報。</p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">FinMind
+                API</span>
+              <span
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">pandas</span>
+              <span
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">GitHub
+                Actions 排程</span>
+              <span
+                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Telegram
+                Bot</span>
             </div>
           </div>
         </div>
-        <!-- Project 2: Industry Research -->
-        <div class="flex flex-col md:flex-row-reverse gap-16 items-center group">
-          <div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
-            <img alt="Industry Research"
-              class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-700"
-              src="./lite-profit.jpeg" />
-          </div>
-          <div class="flex-1 space-y-6">
-            <div class="text-primary font-bold text-sm tracking-widest uppercase">產業研究 · 波段獲利逾 100%</div>
-            <h3 class="text-4xl font-bold tracking-tight">光通訊產業研究｜Lumentum（LITE.US）</h3>
-            <p class="text-on-surface-variant leading-relaxed">
-              系統性分析算力基礎設施「光進銅退」技術轉型趨勢，分析框架涵蓋技術驅動因素（矽光子取代銅纜的物理限制）、供應鏈競爭格局（Lumentum、II-VI、Coherent
-              市佔分析）、財務結構評估（毛利率趨勢、資本支出循環），以及 AI 算力建置對訂單能見度的影響。2025 年 12 月提前布局 Lumentum，達成波段獲利逾 100%。
-            </p>
-            <div class="flex flex-wrap gap-3 pt-2">
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">由上而下分析</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">競爭格局研究</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">財務結構評估</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">風險定價</span>
+
+        <!-- Other works -->
+        <div class="pt-4 reveal">
+          <h3 class="text-xl font-bold tracking-tight mb-8 opacity-70">其他作品</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-surface-container-low p-7 flex flex-col justify-center space-y-3">
+              <span class="material-symbols-outlined text-3xl text-primary">query_stats</span>
+              <div class="text-primary font-bold text-[10px] tracking-widest uppercase nums">量化 · 雙因子策略</div>
+              <h4 class="text-lg font-bold tracking-tight">處置股量能過濾系統</h4>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                用「監管處置事件」當市場行為異常的訊號，再疊上成交量篩掉流動性太差的標的。資料清洗、因子建構、回測整套自己跑，並用
+                MAE/MFE 檢查進場品質——贏單平均 8.18% 大於回檔 4.53%，代表進場點站得住腳。</p>
+              <div class="grid grid-cols-3 gap-2 text-center pt-3 border-t border-outline-variant/30">
+                <div>
+                  <div class="text-base font-extrabold text-primary nums">78.2%</div>
+                  <div class="text-[10px] text-on-surface-variant mt-0.5">勝率</div>
+                </div>
+                <div>
+                  <div class="text-base font-extrabold text-primary nums">+527%</div>
+                  <div class="text-[10px] text-on-surface-variant mt-0.5">累積報酬</div>
+                </div>
+                <div>
+                  <div class="text-base font-extrabold text-primary nums">4.30</div>
+                  <div class="text-[10px] text-on-surface-variant mt-0.5">Sharpe</div>
+                </div>
+              </div>
+              <div class="flex flex-wrap gap-2 pt-1">
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">Python</span>
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">yfinance</span>
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">FinMind</span>
+                <span
+                  class="bg-surface-container-highest px-2 py-0.5 rounded-full text-[10px] font-semibold text-on-surface-variant">MAE/MFE
+                  歸因</span>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Project 3: Shareholder Platform -->
-        <div class="flex flex-col md:flex-row gap-16 items-center group">
-          <div class="w-full md:w-3/5 bg-surface-container overflow-hidden">
-            <img alt="LINE-integrated E-commerce Platform"
-              class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
-              src="./ecommerce.png" />
-          </div>
-          <div class="flex-1 space-y-6">
-            <div class="text-primary font-bold text-sm tracking-widest uppercase">Vibe Coding 全端開發 · 獨立部署上線</div>
-            <h3 class="text-4xl font-bold tracking-tight">股東會紀念品權利電商網站</h3>
-            <p class="text-on-surface-variant leading-relaxed">
-              以 Vibe Coding（AI 協作開發）獨立完成的輕量化全端電商平台，解決台灣散戶領取股東會紀念品的流程痛點。核心差異在於深度整合 LINE 生態系——透過 LINE OAuth
-              實現一鍵登入、LIFF（LINE Front-end Framework）完成無縫購買與推播通知，讓用戶在最熟悉的介面完成交易。從市場洞察、產品設計到正式部署，全程自主完成。
-            </p>
-            <div class="flex flex-wrap gap-3 pt-2">
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Vibe
-                Coding</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Claude
-                Code</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">LINE
-                OAuth · LIFF</span>
-              <span
-                class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-semibold text-on-surface-variant">Zeabur</span>
+            <div class="bg-surface-container-low p-7 flex flex-col justify-center space-y-3">
+              <span class="material-symbols-outlined text-3xl text-primary">workspace_premium</span>
+              <h4 class="text-lg font-bold tracking-tight">即戰力的金融專業基礎</h4>
+              <p class="text-on-surface-variant text-sm leading-relaxed">手上有三張金融證照（期貨商業務員、信託業業務人員、金融市場常識與職業道德），加上 GPA
+                4.0 和初級會計學大會考全校前段（PR 90+）的底子。需要扎實財金基礎的工作，我可以馬上接。</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Investment Philosophy (Market Insights) -->
-    <section class="py-32 px-8 max-w-7xl mx-auto" id="philosophy">
-      <div class="bg-surface-container p-12 md:p-20 relative overflow-hidden">
-        <div class="absolute top-0 right-0 p-12 opacity-10">
-          <span class="material-symbols-outlined text-[120px]"
-            style="font-variation-settings: 'FILL' 1;">insights</span>
-        </div>
-        <div class="max-w-3xl space-y-8">
-          <div class="flex items-center gap-4 text-xs font-bold tracking-[0.2em] text-primary uppercase">
-            Risk Management Philosophy
-          </div>
-          <h2 class="text-3xl font-extrabold tracking-tight">從失敗中建立制度，而非依賴直覺</h2>
-          <p class="text-xl text-on-surface-variant italic leading-relaxed">
-            "正確的產業判斷不等於正確的進場時機。2025 年初布局 ABF 載板的操作失誤，讓我理解：
-            即便看好長期趨勢，仍須嚴格評估短期財務健康度與流動性風險。
-            此後建立『進場即預設出場』SOP——每筆投資在進場前即確立停損條件，
-            且後續決策與前次損益完全脫鉤，確保判斷的客觀性。"
+    <!-- Research discipline -->
+    <section class="py-24 md:py-32 px-6 md:px-8" id="discipline">
+      <div class="max-w-7xl mx-auto space-y-12">
+        <div class="space-y-4 reveal">
+          <div class="text-primary font-bold text-sm tracking-[0.2em] uppercase">Research Discipline</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter">讓每個結論都能被檢驗的五條紀律</h2>
+          <p class="text-on-surface-variant text-lg max-w-3xl leading-relaxed">這五條是我寫進系統、強迫自己每次都遵守的規則，也是我覺得研究員本來就該有的習慣。
           </p>
-          <div class="font-manrope font-bold text-on-surface">— 莊宇正 · 交易風控反思</div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 bg-outline-variant/20">
+          <div class="bg-surface p-8 space-y-2 reveal">
+            <div class="text-primary nums text-sm font-bold">01</div>
+            <h3 class="font-bold tracking-tight">每個數字都附來源</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">沒有出處的數字不寫進結論，確保事後可追溯、可複查。</p>
+          </div>
+          <div class="bg-surface p-8 space-y-2 reveal">
+            <div class="text-primary nums text-sm font-bold">02</div>
+            <h3 class="font-bold tracking-tight">推估值一律標警告</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">凡是推算出來的評分、合理本益比、目標價，都標記並附上推導邏輯。</p>
+          </div>
+          <div class="bg-surface p-8 space-y-2 reveal">
+            <div class="text-primary nums text-sm font-bold">03</div>
+            <h3 class="font-bold tracking-tight">結論必須可被推翻</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">每個判斷都寫出「什麼情況下會失效」，強迫自己想反方。</p>
+          </div>
+          <div class="bg-surface p-8 space-y-2 reveal">
+            <div class="text-primary nums text-sm font-bold">04</div>
+            <h3 class="font-bold tracking-tight">矛盾來源全部並列</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">不同來源說法不一時平行並列、不預設誰對，再分析分歧根因。</p>
+          </div>
+          <div class="bg-surface p-8 space-y-2 reveal">
+            <div class="text-primary nums text-sm font-bold">05</div>
+            <h3 class="font-bold tracking-tight">出報告前先校準</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">用公司法說會 guidance 與真實月營收回頭校準估計值才下結論。</p>
+          </div>
+          <div class="bg-primary text-on-primary p-8 space-y-2 flex flex-col justify-center reveal"><span
+              class="material-symbols-outlined">verified</span>
+            <p class="text-sm leading-relaxed font-medium">這些規則的目的，是把「嚴謹」變成每次都能重複執行的流程。</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-32 px-8 max-w-7xl mx-auto" id="about">
-      <div class="flex flex-col md:flex-row gap-20 items-start">
-        <div class="flex-1 space-y-6">
-          <h2 class="text-3xl font-extrabold tracking-tighter text-on-surface">關於我</h2>
-          <p class="text-on-surface-variant leading-relaxed text-lg">
-            莊宇正（Chuang Yu-Cheng），就讀國立政治大學企業管理學系三年級，GPA 4.0。
-            從高中一年級開始便對金融市場抱持強烈企圖心，並在2020年開戶，開始在台股中交易。一開始的交易雖然都是小額零股，所以養成不停損的交易習慣。尤其是在經歷人人航海王的時代，下跌就是加倉，不在乎任何交易風險，這也讓我最後留在海上成了水鬼一枚。
-            在進入大學後，除了在系統性商學訓練之外，長期的交易也更認識自己的交易優缺點，並透過實戰操作，重新反覆的檢討與修正自己的交易策略，最後逐漸形成一套屬於自己的交易系統。
-          </p>
-          <p class="text-on-surface-variant leading-relaxed text-lg">
-            更甚至也接觸到程式交易，雖然不是本科生，但透過AI和自身的學習，逐漸學習程式交易。到現在對程式交易的理解不停留於理論層面，而是已經可以獨立完成從原始資料蒐集、因子建構、
-            回測模型建立到績效驗證的全流程。同時具備 AI 輔助開發能力，能獨立將想法落地為可部署的產品。
-          </p>
+    <!-- Investment philosophy -->
+    <section class="py-24 md:py-32 px-6 md:px-8 max-w-7xl mx-auto space-y-6" id="philosophy">
+      <div class="bg-on-surface text-on-primary p-10 md:p-20 relative overflow-hidden reveal">
+        <div class="absolute top-0 right-0 p-12 opacity-10"><span
+            class="material-symbols-outlined text-[120px] text-primary-fixed"
+            style="font-variation-settings:'FILL' 1;">auto_graph</span></div>
+        <div class="max-w-3xl space-y-6">
+          <div class="text-xs font-bold tracking-[0.2em] text-primary-fixed uppercase">Core Investment Belief</div>
+          <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">從訊號到系統，讓判斷可以被驗證</h2>
+          <p class="text-lg md:text-xl text-slate-200 italic leading-relaxed">
+            「成交量是市場最誠實的語言。在任何消息被公開之前，資金的流動已經留下第一手足跡——但真正的紀律，是把這些訊號轉化為可回測、可證偽的系統，而不是相信當下的直覺。最好的交易決策，應該在進場之前就已經完成。」</p>
+          <div class="font-bold text-primary-fixed">— 莊宇正 · 投資信念</div>
         </div>
-        <div class="w-full md:w-2/5 space-y-8">
-          <!-- Education -->
-          <div class="bg-surface-container-low p-8 space-y-4">
-            <h3 class="text-lg font-bold tracking-tight text-on-surface">學歷</h3>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-24 md:py-32 px-6 md:px-8 max-w-7xl mx-auto" id="about">
+      <div class="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
+        <div class="flex-1 space-y-5 reveal">
+          <div class="flex items-center gap-5">
+            <img src="./portrait.jpg" alt="莊宇正 Chuang Yu-Cheng 大頭照" loading="lazy"
+              class="w-24 md:w-28 rounded-xl object-cover shrink-0 ring-1 ring-outline-variant/40 shadow-sm" />
             <div>
-              <div class="font-semibold text-on-surface">國立政治大學</div>
-              <div class="text-on-surface-variant text-sm">企業管理學系 · 大學三年級 · 預計 2027 畢業</div>
-              <div class="text-primary font-bold mt-1">GPA 4.0 / 4.3</div>
+              <h2 class="text-3xl font-extrabold tracking-tighter">關於我</h2>
+              <div class="text-on-surface-variant text-sm mt-1.5">莊宇正 Chuang Yu-Cheng · 股票研究員候選人</div>
             </div>
           </div>
-          <!-- Certifications -->
-          <div class="bg-surface-container-low p-8 space-y-4">
-            <h3 class="text-lg font-bold tracking-tight text-on-surface">金融證照</h3>
+          <p class="text-on-surface-variant leading-relaxed text-lg">莊宇正（Chuang Yu-Cheng），國立政治大學企業管理學系三年級，GPA
+            4.0。高中起便對金融市場抱持強烈企圖心，2020 年開戶交易台股；早期歷經航海王時代、養成不停損習慣而受傷。進大學後在系統性商學訓練之外，透過長期實戰反覆檢討修正，逐漸形成一套屬於自己的交易系統。</p>
+          <p class="text-on-surface-variant leading-relaxed text-lg">雖非資工本科，透過 AI
+            與自學掌握程式交易，現在已能獨立完成從原始資料蒐集、因子建構、回測模型建立到績效驗證的全流程，並具備 AI 輔助開發能力，能把想法落地為使用的產品。</p>
+        </div>
+        <div class="w-full md:w-2/5 space-y-6">
+          <div class="bg-surface-container-low p-7 space-y-3 reveal">
+            <h3 class="text-lg font-bold tracking-tight">學歷</h3>
+            <div class="font-semibold">國立政治大學</div>
+            <div class="text-on-surface-variant text-sm">企業管理學系 · 大三 · 預計 2027 畢業</div>
+            <div class="text-primary font-bold nums">GPA 4.0 / 4.3</div>
+          </div>
+          <div class="bg-surface-container-low p-7 space-y-3 reveal">
+            <h3 class="text-lg font-bold tracking-tight">財務報表分析能力</h3>
+            <div class="font-semibold text-sm">初級會計學大會考 · 全校性考試</div>
+            <div class="space-y-2 pt-2 border-t border-outline-variant/30">
+              <div class="flex justify-between text-sm"><span class="text-on-surface-variant">第一學期</span><span
+                  class="font-semibold nums">班排 5-6 · PR 90-95</span></div>
+              <div class="flex justify-between text-sm"><span class="text-on-surface-variant">第二學期</span><span
+                  class="font-semibold text-primary nums">班排 2-3 · PR 95-98</span></div>
+            </div>
+          </div>
+          <div class="bg-surface-container-low p-7 space-y-3 reveal">
+            <h3 class="text-lg font-bold tracking-tight">金融證照</h3>
             <div class="space-y-2">
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                <span class="text-on-surface-variant text-sm">期貨商業務員</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                <span class="text-on-surface-variant text-sm">信託業業務人員</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                <span class="text-on-surface-variant text-sm">金融市場常識與職業道德</span>
-              </div>
+              <div class="flex items-center gap-3"><span
+                  class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span><span
+                  class="text-on-surface-variant text-sm">期貨商業務員</span></div>
+              <div class="flex items-center gap-3"><span
+                  class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span><span
+                  class="text-on-surface-variant text-sm">信託業業務人員</span></div>
+              <div class="flex items-center gap-3"><span
+                  class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span><span
+                  class="text-on-surface-variant text-sm">金融市場常識與職業道德</span></div>
             </div>
           </div>
-          <!-- Skills -->
-          <div class="bg-surface-container-low p-8 space-y-4">
-            <h3 class="text-lg font-bold tracking-tight text-on-surface">技能</h3>
-            <div class="space-y-3">
-              <div>
-                <div class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">金融專業</div>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">量化回測分析</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">技術分析（SMC・Wave
-                    Theory）</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">基本面研究</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">產業研究</span>
-                </div>
+          <div class="bg-surface-container-low p-7 space-y-4 reveal">
+            <h3 class="text-lg font-bold tracking-tight">技能</h3>
+            <div>
+              <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">金融專業</div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">量化回測分析</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">技術分析（SMC・Wave）</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">基本面研究</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">產業研究</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">籌碼面分析</span>
               </div>
-              <div>
-                <div class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">程式語言 & 工具</div>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Python</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">JavaScript
-                    · React</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Figma</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Git
-                    / GitHub</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Antigravity（AI
-                    協作開發）</span>
-                </div>
+            </div>
+            <div>
+              <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">程式語言 & 工具</div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Python</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">JavaScript
+                  · React</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Figma</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Git
+                  / GitHub</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">Antigravity
+                  · Claude Code · N8N</span>
               </div>
-              <div>
-                <div class="text-xs text-on-surface-variant uppercase tracking-widest mb-2">語言能力</div>
-                <div class="flex flex-wrap gap-2">
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">中文（母語）</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">英文（流利）</span>
-                  <span
-                    class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">日文（N4-N5
-                    進修中）</span>
-                </div>
+            </div>
+            <div>
+              <div class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-2">語言能力</div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">中文（母語）</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">英文（流利）</span>
+                <span
+                  class="bg-surface-container-highest px-3 py-1 rounded-full text-xs font-medium text-on-surface-variant">日文（N4-N5
+                  進修中）</span>
               </div>
             </div>
           </div>
@@ -502,82 +748,110 @@
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-32 px-8 max-w-7xl mx-auto text-center space-y-12">
-      <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-on-surface">
-        正在尋找<br />
-        2026 暑期實習機會。
-      </h2>
-      <p class="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-        量化研究 × FinTech 開發 × AI 應用——期待在實習中將學術基礎與實務環境真正接軌，
-        以積極的學習態度創造即時貢獻。
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-6">
+    <!-- CTA -->
+    <section class="py-24 md:py-32 px-6 md:px-8 max-w-7xl mx-auto text-center space-y-10 reveal">
+      <h2 class="text-3xl md:text-6xl font-extrabold tracking-tighter">找的是能從第一天就上手的<br /><span
+          class="text-primary">股票研究實習生</span>嗎？</h2>
+      <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        量化、基本面、籌碼我都做得來，也能自己寫工具把研究流程自動化。手邊有可以細聊的專案，歡迎來信。</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="mailto:yuzhouleo@gmail.com"
-          class="bg-primary text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all">
-          傳送 Email 給我
-        </a>
-        <a href="https://github.com/YuZhouLeo/resume-website"
-          class="bg-on-surface text-on-primary px-10 py-5 font-bold tracking-tight text-lg hover:brightness-110 transition-all"
-          target="_blank">
-          查看 GitHub
-        </a>
+          class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-8 py-4 font-bold tracking-tight text-base md:text-lg hover:brightness-110 transition-all"><span
+            class="material-symbols-outlined">mail</span>傳送 Email</a>
+        <a href="https://github.com/YuZhouLeo/resume-website" target="_blank"
+          class="inline-flex items-center justify-center gap-2 bg-surface-container-highest text-on-surface px-8 py-4 font-bold tracking-tight text-base md:text-lg hover:brightness-95 transition-all"><span
+            class="material-symbols-outlined">code</span>查看 GitHub</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="w-full py-12 px-8 bg-slate-200">
+  <footer class="w-full py-10 px-6 md:px-8 bg-slate-200">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-      <div class="font-manrope font-bold text-slate-900 text-lg">莊宇正 · Chuang Yu-Cheng</div>
-      <p class="font-inter text-sm tracking-wide text-slate-600">© 2026 Chuang Yu-Cheng. All rights reserved.</p>
+      <div class="font-bold text-slate-900 text-lg">莊宇正 · Chuang Yu-Cheng</div>
+      <p class="text-sm tracking-wide text-slate-600">© 2026 Chuang Yu-Cheng. All rights reserved.</p>
       <div class="flex gap-8">
-        <a class="font-inter text-sm tracking-wide text-slate-600 hover:text-slate-900 transition-opacity"
-          href="mailto:yuzhouleo@gmail.com">Email</a>
-        <a class="font-inter text-sm tracking-wide text-slate-600 hover:text-slate-900 transition-opacity"
+        <a class="text-sm tracking-wide text-slate-600 hover:text-slate-900" href="mailto:yuzhouleo@gmail.com">Email</a>
+        <a class="text-sm tracking-wide text-slate-600 hover:text-slate-900"
           href="https://github.com/YuZhouLeo/resume-website" target="_blank">GitHub</a>
       </div>
     </div>
   </footer>
+
   <script>
-      (function () {
-        var container = document.getElementById('strategy-stats');
-        if (!container) return;
-        var els = container.querySelectorAll('.stat-num');
-        if (!els.length) return;
-        function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
-        function animateAll() {
-          var duration = 1400;
-          var start = performance.now();
-          var targets = Array.from(els).map(function (el) {
-            return {
-              el: el,
-              target: parseFloat(el.dataset.target),
-              decimals: parseInt(el.dataset.decimals || '0'),
-              suffix: el.dataset.suffix || ''
-            };
-          });
-          function frame(now) {
-            var elapsed = now - start;
-            var progress = Math.min(elapsed / duration, 1);
-            var ease = easeOut(progress);
-            targets.forEach(function (item) {
-              item.el.textContent = (ease * item.target).toFixed(item.decimals) + item.suffix;
-            });
-            if (progress < 1) requestAnimationFrame(frame);
-          }
-          requestAnimationFrame(frame);
-        }
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              animateAll();
-              observer.disconnect();
-            }
-          });
-        }, { threshold: 0.5 });
-        observer.observe(container);
-      })();
+    function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+    function countUp(container) {
+      var els = container.querySelectorAll('.stat-num');
+      if (!els.length) return;
+      var start = performance.now(), duration = 1400;
+      var targets = Array.from(els).map(function (el) {
+        return { el: el, target: parseFloat(el.dataset.target), decimals: parseInt(el.dataset.decimals || '0'), suffix: el.dataset.suffix || '' };
+      });
+      function frame(now) {
+        var p = Math.min((now - start) / duration, 1), e = easeOut(p);
+        targets.forEach(function (it) { it.el.textContent = (e * it.target).toFixed(it.decimals) + it.suffix; });
+        if (p < 1) requestAnimationFrame(frame);
+      }
+      requestAnimationFrame(frame);
+    }
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); revealObs.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(function (el) { revealObs.observe(el); });
+
+    var statObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { if (!reduce) countUp(en.target); revealObs.unobserve(en.target); statObs.unobserve(en.target); } });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('#metricStrip').forEach(function (el) { statObs.observe(el); });
+
+    // Telegram feature carousel — 圓點/計數由 slide 數自動推導，新增功能只要多一個 <figure class="tg-slide">
+    (function () {
+      var root = document.getElementById('tgCarousel');
+      if (!root) return;
+      var slides = Array.prototype.slice.call(root.querySelectorAll('.tg-slide'));
+      if (!slides.length) return;
+      var dotsWrap = root.querySelector('.tg-dots');
+      var featNo = root.querySelector('.tg-feat-no');
+      var featTitle = root.querySelector('.tg-feat-title');
+      var featDesc = root.querySelector('.tg-feat-desc');
+      var idx = 0;
+      var dots = slides.map(function (s, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', '第 ' + (i + 1) + ' 張');
+        b.className = 'w-2 h-2 rounded-full bg-on-surface-variant/30 transition-colors';
+        b.addEventListener('click', function () { go(i); });
+        dotsWrap.appendChild(b);
+        return b;
+      });
+      function render() {
+        slides.forEach(function (s, i) { s.classList.toggle('is-active', i === idx); });
+        dots.forEach(function (d, i) {
+          d.className = 'w-2 h-2 rounded-full transition-colors ' + (i === idx ? 'bg-primary' : 'bg-on-surface-variant/30');
+        });
+        var cur = slides[idx];
+        if (featNo) featNo.textContent = '功能 ' + (idx + 1) + ' / ' + slides.length;
+        if (featTitle) featTitle.textContent = cur.getAttribute('data-title') || '';
+        if (featDesc) featDesc.textContent = cur.getAttribute('data-desc') || '';
+      }
+      function go(i) { idx = (i + slides.length) % slides.length; render(); }
+      var prev = root.querySelector('.tg-prev'), next = root.querySelector('.tg-next');
+      if (prev) prev.addEventListener('click', function () { go(idx - 1); });
+      if (next) next.addEventListener('click', function () { go(idx + 1); });
+      var x0 = null, frame = root.querySelector('.tg-frame');
+      if (frame) {
+        frame.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+        frame.addEventListener('touchend', function (e) {
+          if (x0 === null) return;
+          var dx = e.changedTouches[0].clientX - x0;
+          if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+          x0 = null;
+        }, { passive: true });
+      }
+      render();
+    })();
   </script>
 </body>
 

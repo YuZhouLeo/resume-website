@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>莊宇正 | 個人作品集履歷</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── 顏色系統（與 index.html 完全一致） ── */
+    :root {
+      --primary:                  #49607c;
+      --on-primary:               #f5f8ff;
+      --primary-fixed:            #d1e4ff;
+      --on-surface:               #183549;
+      --on-surface-variant:       #334155;
+      --surface:                  #f6f9ff;
+      --surface-container:        #e0f0ff;
+      --surface-container-low:    #ebf5ff;
+      --surface-container-high:   #d5ebff;
+      --surface-container-highest:#cae6ff;
+      --outline-variant:          #99b5ce;
+      --outline:                  #627e94;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', sans-serif;
+      font-size: 9pt;
+      color: var(--on-surface);
+      background: #e8eef4;
+      line-height: 1.55;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Manrope', 'Noto Sans TC', sans-serif;
+    }
+
+    /* ── A4 頁面 ── */
+    .page {
+      width: 210mm;
+      margin: 10mm auto;
+      background: #fff;
+      box-shadow: 0 4px 32px rgba(0,0,0,.18);
+    }
+
+    /* ── 列印設定 ── */
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; width: 100%; box-shadow: none; }
+      @page { size: A4; margin: 0; }
+      .page-break { break-before: page; }
+    }
+
+    /* ════════════════════════════════
+       SECTION 1 ── Hero（深色）
+    ════════════════════════════════ */
+    .hero {
+      background: var(--on-surface);
+      color: #fff;
+      padding: 28px 32px 24px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .hero-left { flex: 1; }
+
+    .badge-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,.08);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 7.5pt;
+      color: #a8c8e8;
+      margin-bottom: 10px;
+    }
+    .badge-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
+
+    .hero-name {
+      font-size: 28pt;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .hero-name span { color: var(--primary-fixed); }
+
+    .hero-tagline {
+      font-size: 9.5pt;
+      color: #a0b8cc;
+      max-width: 340px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 12px;
+    }
+    .hero-tag {
+      background: rgba(255,255,255,.1);
+      color: #c8ddf0;
+      font-size: 7pt;
+      font-weight: 600;
+      padding: 2px 8px;
+      letter-spacing: .04em;
+    }
+    .hero-tag.accent {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .hero-contact {
+      font-size: 7.5pt;
+      color: #7a9ab8;
+      line-height: 1.9;
+    }
+    .hero-contact a { color: #90b8d8; text-decoration: none; }
+
+    .hero-right {
+      width: 200px;
+      flex-shrink: 0;
+    }
+    .hero-right svg { width: 100%; height: auto; }
+
+    /* ════════════════════════════════
+       SECTION 2 ── 三欄能力（深色）
+    ════════════════════════════════ */
+    .expertise {
+      background: var(--on-surface);
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      border-top: 1px solid rgba(153,181,206,.15);
+    }
+    .exp-card {
+      padding: 16px 20px;
+      border-right: 1px solid rgba(153,181,206,.15);
+    }
+    .exp-card:last-child { border-right: none; }
+
+    .exp-icon {
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary-fixed);
+      opacity: .7;
+      margin-bottom: 5px;
+    }
+    .exp-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .exp-desc {
+      font-size: 7.5pt;
+      color: #8aaccc;
+      line-height: 1.6;
+    }
+    .exp-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+      margin-top: 8px;
+    }
+    .exp-pill {
+      background: rgba(255,255,255,.06);
+      color: #7099bc;
+      font-size: 7pt;
+      padding: 1px 6px;
+      border-radius: 2px;
+    }
+
+    /* ════════════════════════════════
+       SECTION 3 ── 精選專案（淺色）
+    ════════════════════════════════ */
+    .projects {
+      background: var(--surface);
+      padding: 20px 28px;
+    }
+    .sec-label {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--outline-variant);
+      padding-bottom: 4px;
+      margin-bottom: 14px;
+      opacity: .8;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .project-card {
+      background: var(--surface-container-low);
+      padding: 14px 16px;
+      border-left: 3px solid var(--primary);
+    }
+    .project-tag {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .project-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--on-surface);
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    /* KPI strip */
+    .kpi-strip {
+      display: flex;
+      gap: 8px;
+      background: var(--surface-container);
+      padding: 6px 10px;
+      margin: 6px 0;
+    }
+    .kpi-item { text-align: center; }
+    .kpi-num {
+      font-family: 'Manrope', sans-serif;
+      font-size: 10.5pt;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .kpi-label {
+      font-size: 6.5pt;
+      color: var(--outline);
+      margin-top: 1px;
+    }
+
+    .project-desc {
+      font-size: 7.5pt;
+      color: var(--on-surface-variant);
+      line-height: 1.6;
+      margin-top: 4px;
+    }
+    .project-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 7px;
+    }
+    .project-pill {
+      background: var(--surface-container-highest);
+      color: var(--on-surface-variant);
+      font-size: 6.5pt;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    /* result badge */
+    .result-badge {
+      display: inline-block;
+      background: var(--surface-container-high);
+      color: var(--primary);
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 10px;
+      margin: 5px 0 3px;
+    }
+
+    /* ════════════════════════════════
+       SECTION 4 ── 關於我 + Side
+    ════════════════════════════════ */
+    .about-row {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      gap: 0;
+      background: var(--surface);
+    }
+
+    /* 左欄：投資哲學 + 關於我 */
+    .about-main {
+      padding: 20px 24px 20px 28px;
+      border-right: 1px solid var(--outline-variant);
+    }
+
+    .philosophy-block {
+      background: var(--on-surface);
+      color: #c8ddf0;
+      padding: 12px 16px;
+      margin-bottom: 14px;
+    }
+    .philosophy-label {
+      font-size: 6.5pt;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--primary-fixed);
+      opacity: .7;
+      margin-bottom: 4px;
+    }
+    .philosophy-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .philosophy-quote {
+      font-size: 7.5pt;
+      color: #8aaccc;
+      font-style: italic;
+      line-height: 1.65;
+    }
+
+    .about-text {
+      font-size: 7.5pt;
+      color: var(--on-surface-variant);
+      line-height: 1.7;
+    }
+    .about-text + .about-text { margin-top: 6px; }
+
+    /* 右欄：學歷 + 證照 + 技能 */
+    .about-side {
+      padding: 20px 18px;
+      background: var(--surface-container-low);
+    }
+    .side-section { margin-bottom: 14px; }
+    .side-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      border-bottom: 1px solid var(--outline-variant);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    .edu-block .school {
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--on-surface);
+    }
+    .edu-block .dept {
+      font-size: 7.5pt;
+      color: var(--on-surface-variant);
+    }
+    .edu-block .gpa {
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 2px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 7.5pt;
+      color: var(--on-surface-variant);
+      margin-bottom: 4px;
+    }
+    .cert-dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: #4ade80;
+      flex-shrink: 0;
+    }
+
+    .skill-group { margin-bottom: 6px; }
+    .skill-group-label {
+      font-size: 6.5pt;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--outline);
+      margin-bottom: 3px;
+    }
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+    .skill-pill {
+      background: var(--surface-container-highest);
+      color: var(--on-surface-variant);
+      font-size: 6.5pt;
+      font-weight: 500;
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+
+    /* 會計成績 */
+    .acct-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.5pt;
+      padding: 3px 0;
+      border-bottom: 1px solid var(--outline-variant);
+    }
+    .acct-row:last-child { border-bottom: none; }
+    .acct-label { color: var(--on-surface-variant); }
+    .acct-val { font-weight: 700; color: var(--primary); }
+
+    /* ── 頁面分隔線（視覺提示） ── */
+    .page-marker {
+      height: 2px;
+      background: var(--outline-variant);
+      opacity: .3;
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="badge-row">
+        <span class="badge-dot"></span>
+        2026 暑期實習積極尋職中
+      </div>
+      <h1 class="hero-name">
+        莊宇正<br/>
+        <span>金融 × 科技</span>實踐者
+      </h1>
+      <p class="hero-tagline">
+        量化思維驅動的研究者。用可驗證的回測方法設計台股策略，
+        以由上而下框架挖掘產業催化劑，以 AI 工程化落地投研工具。
+      </p>
+      <div class="hero-tags">
+        <span class="hero-tag">NCCU 企管系 三年級</span>
+        <span class="hero-tag">GPA 4.0 / 4.3</span>
+        <span class="hero-tag">Python · yfinance · FinMind</span>
+        <span class="hero-tag">Anthropic Academy</span>
+        <span class="hero-tag accent">金融證照 ×3</span>
+      </div>
+      <div class="hero-contact">
+        yuzhouleo@gmail.com &nbsp;·&nbsp; 0971-750-225<br/>
+        <a href="https://github.com/YuZhouLeo">github.com/YuZhouLeo</a>
+      </div>
+    </div>
+
+    <!-- SVG 回測圖（直接從 index.html 移植） -->
+    <div class="hero-right">
+      <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="eqFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#49607c" stop-opacity="0.28"/>
+            <stop offset="100%" stop-color="#49607c" stop-opacity="0.02"/>
+          </linearGradient>
+          <linearGradient id="ddFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ef4444" stop-opacity="0.04"/>
+            <stop offset="100%" stop-color="#ef4444" stop-opacity="0.32"/>
+          </linearGradient>
+        </defs>
+        <text x="8" y="11" font-family="Inter,sans-serif" font-size="7.5" fill="#7a9ab8" letter-spacing="0.08em">STRATEGY · BACKTEST 2020–2026</text>
+        <text x="230" y="11" font-family="Manrope,sans-serif" font-size="13" font-weight="800" fill="#d1e4ff">+527.4%</text>
+        <text x="8" y="20" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.8">N=137 · 勝率 78.20% · Sharpe 4.30 · MDD -29.53%</text>
+        <!-- Grid -->
+        <line x1="8" y1="190" x2="311" y2="190" stroke="#99b5ce" stroke-width="0.6" opacity="0.4"/>
+        <line x1="8" y1="158" x2="311" y2="158" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5" opacity="0.2"/>
+        <line x1="8" y1="126" x2="311" y2="126" stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5" opacity="0.2"/>
+        <line x1="8" y1="95"  x2="311" y2="95"  stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5" opacity="0.2"/>
+        <line x1="8" y1="63"  x2="311" y2="63"  stroke="#99b5ce" stroke-width="0.3" stroke-dasharray="2,5" opacity="0.2"/>
+        <!-- Equity fill -->
+        <polygon points="8,190 12,187 16,181 20,177 24,166 29,172 33,164 37,159 41,156 45,153 49,153 53,142 57,141 61,136 66,129 70,117 74,113 78,110 82,107 86,107 90,107 94,109 98,106 102,107 107,107 111,107 115,104 119,101 123,93 127,93 131,96 135,96 139,95 143,92 147,92 152,92 156,92 160,92 164,89 168,87 172,84 176,84 180,78 184,78 188,78 192,79 197,79 201,79 205,79 209,79 213,78 217,76 221,75 225,72 229,57 233,57 238,57 242,57 246,57 250,53 254,51 258,51 262,51 266,51 270,51 274,51 279,51 283,49 287,47 291,44 295,40 299,35 303,28 307,27 311,22 311,190" fill="url(#eqFill)"/>
+        <!-- Equity line -->
+        <polyline points="8,190 12,187 16,181 20,177 24,166 29,172 33,164 37,159 41,156 45,153 49,153 53,142 57,141 61,136 66,129 70,117 74,113 78,110 82,107 86,107 90,107 94,109 98,106 102,107 107,107 111,107 115,104 119,101 123,93 127,93 131,96 135,96 139,95 143,92 147,92 152,92 156,92 160,92 164,89 168,87 172,84 176,84 180,78 184,78 188,78 192,79 197,79 201,79 205,79 209,79 213,78 217,76 221,75 225,72 229,57 233,57 238,57 242,57 246,57 250,53 254,51 258,51 262,51 266,51 270,51 274,51 279,51 283,49 287,47 291,44 295,40 299,35 303,28 307,27 311,22" fill="none" stroke="#d1e4ff" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+        <!-- Drawdown -->
+        <text x="8" y="199" font-family="Inter,sans-serif" font-size="6.5" fill="#7a9ab8" opacity="0.6">Drawdown</text>
+        <line x1="8" y1="200" x2="311" y2="200" stroke="#99b5ce" stroke-width="0.5" opacity="0.4"/>
+        <polygon points="8,200 24,200 29,255 33,200 90,200 94,213 98,200 102,206 111,206 115,200 127,200 131,216 135,216 139,212 143,200 192,200 197,206 205,206 209,200 311,200" fill="url(#ddFill)"/>
+        <polyline points="8,200 24,200 29,255 33,200 90,200 94,213 98,200 102,206 111,206 115,200 127,200 131,216 135,216 139,212 143,200 192,200 197,206 205,206 209,200 311,200" fill="none" stroke="#ef4444" stroke-width="1.3" stroke-linejoin="round" opacity="0.7"/>
+        <!-- Year labels -->
+        <text x="8"   y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2020</text>
+        <text x="57"  y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2021</text>
+        <text x="107" y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2022</text>
+        <text x="156" y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2023</text>
+        <text x="205" y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2024</text>
+        <text x="254" y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2025</text>
+        <text x="299" y="272" font-family="Inter,sans-serif" font-size="7" fill="#7a9ab8" opacity="0.6">2026</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ══ 三欄能力 ══ -->
+  <section class="expertise">
+    <div class="exp-card">
+      <div class="exp-icon">01 · Quantitative</div>
+      <div class="exp-title">量化投資研究</div>
+      <p class="exp-desc">從因子建構、資料品質檢核到 MAE/MFE 統計歸因，確保策略 alpha 可驗證、可複現。熟悉 MDD / Sharpe 風險監控與停損機制設計。</p>
+      <div class="exp-pills">
+        <span class="exp-pill">因子研究</span><span class="exp-pill">回測框架</span><span class="exp-pill">歸因分析</span><span class="exp-pill">風險監控</span>
+      </div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">02 · Fundamental</div>
+      <div class="exp-title">產業基本面分析</div>
+      <p class="exp-desc">由上而下框架：總經趨勢 → 產業競爭格局 → 財務結構評估 → 催化劑識別。能從財務三表交叉驗證企業經營實況，支持風險定價決策。</p>
+      <div class="exp-pills">
+        <span class="exp-pill">總經</span><span class="exp-pill">產業</span><span class="exp-pill">財務</span><span class="exp-pill">催化劑</span><span class="exp-pill">風險定價</span>
+      </div>
+    </div>
+    <div class="exp-card">
+      <div class="exp-icon">03 · AI × FinTech</div>
+      <div class="exp-title">AI × 金融工程化</div>
+      <p class="exp-desc">以 Vibe Coding 快速將投資想法轉化為可部署工具，自建籌碼面 ETL Pipeline，讓例行性研究工作自動化，釋放人力至高價值判斷。</p>
+      <div class="exp-pills">
+        <span class="exp-pill">研報萃取</span><span class="exp-pill">ETL Pipeline</span><span class="exp-pill">自動推播</span><span class="exp-pill">快速原型</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 精選專案 ══ -->
+  <section class="projects">
+    <div class="sec-label">精選專案 Selected Projects</div>
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-tag">量化策略 · 台股雙因子</div>
+        <div class="project-title">Strategy E｜處置股量能過濾系統</div>
+        <div class="kpi-strip">
+          <div class="kpi-item"><div class="kpi-num">+527.4%</div><div class="kpi-label">累積報酬</div></div>
+          <div class="kpi-item"><div class="kpi-num">78.2%</div><div class="kpi-label">勝率</div></div>
+          <div class="kpi-item"><div class="kpi-num">3.85%</div><div class="kpi-label">平均報酬/筆</div></div>
+          <div class="kpi-item"><div class="kpi-num">-29.5%</div><div class="kpi-label">MDD</div></div>
+          <div class="kpi-item"><div class="kpi-num">4.30</div><div class="kpi-label">Sharpe</div></div>
+        </div>
+        <p class="project-desc">獨立開發雙因子架構：以「監管處置事件」作為行為異常訊號因子，疊加「成交量 >1,000 張」作為流動性品質因子。完整執行資料蒐集清洗、因子建構、回測模型建立全流程，運用 MAE/MFE 統計驗證進場品質（贏單 MFE 8.18% > MAE 4.53%）。2025 年 4 月台股系統性下跌期間，模型觸發零交易機制。</p>
+        <div class="project-pills">
+          <span class="project-pill">Python</span><span class="project-pill">yfinance</span><span class="project-pill">FinMind</span><span class="project-pill">MAE/MFE 歸因</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-tag">產業研究 · 美股布局</div>
+        <div class="project-title">光通訊產業研究｜Lumentum（LITE.US）</div>
+        <div class="result-badge">波段獲利逾 +100%｜2025 Q4</div>
+        <p class="project-desc">系統性分析算力基礎設施「光進銅退」技術轉型。分析框架涵蓋：技術驅動因素（矽光子取代銅纜的物理限制）→ 競爭格局（Lumentum / II-VI / Coherent 市佔分析）→ 財務結構評估（毛利率趨勢、CapEx 循環）→ AI 算力建置對訂單能見度的影響。2025 年 12 月提前布局，達成波段獲利逾 100%，完整驗證由上而下研究框架的可執行性。</p>
+        <div class="project-pills">
+          <span class="project-pill">由上而下分析</span><span class="project-pill">競爭格局</span><span class="project-pill">財務結構</span><span class="project-pill">風險定價</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="page-marker"></div>
+
+  <!-- ══ 關於我 + Side ══ -->
+  <div class="about-row">
+
+    <!-- 左：投資哲學 + 關於我 -->
+    <div class="about-main">
+      <div class="sec-label" style="margin-bottom:12px;">投資哲學 &amp; 關於我</div>
+
+      <div class="philosophy-block">
+        <div class="philosophy-label">Core Investment Belief</div>
+        <div class="philosophy-title">從訊號到系統：讓每一個判斷都可被驗證</div>
+        <p class="philosophy-quote">"成交量是市場最誠實的語言。真正的紀律，是把訊號轉化為可回測、可證偽的系統，而不是相信當下的直覺。最好的交易決策，應該在進場之前就已經完成。"</p>
+      </div>
+
+      <p class="about-text">莊宇正，國立政治大學企業管理學系三年級，GPA 4.0。從高中一年級開始對金融市場抱持強烈企圖心，2020 年開戶進入台股。早期歷經不停損的慘痛教訓，在「航海王時代」深陷套牢後痛定思痛，進入大學後系統性重建交易框架。</p>
+      <p class="about-text" style="margin-top:6px;">透過自學 Python 與 AI 工具，獨立完成從原始資料蒐集、因子建構到績效驗證的量化回測全流程。現任政大 AI 應用社教學長，主講 4 場 AI 實務課程，累積指導 60+ 名學員，具備將複雜概念清晰傳遞的溝通能力。</p>
+      <p class="about-text" style="margin-top:6px;font-style:italic;color:#627e94;">"正確的產業判斷不等於正確的進場時機。2025 年初布局 ABF 載板的失誤，讓我建立『進場即預設出場』SOP，確保後續決策與前次損益完全脫鉤。"</p>
+    </div>
+
+    <!-- 右：學歷 + 成績 + 證照 + 技能 -->
+    <div class="about-side">
+
+      <div class="side-section">
+        <div class="side-title">學歷</div>
+        <div class="edu-block">
+          <div class="school">國立政治大學</div>
+          <div class="dept">企業管理學系 · 三年級<br/>預計 2027 畢業</div>
+          <div class="gpa">GPA 4.0 / 4.3</div>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <div class="side-title">初級會計學大會考</div>
+        <div class="acct-row">
+          <span class="acct-label">第一學期</span>
+          <span class="acct-val">班排 5-6 · PR 90-95</span>
+        </div>
+        <div class="acct-row">
+          <span class="acct-label">第二學期</span>
+          <span class="acct-val">班排 2-3 · PR 95-98</span>
+        </div>
+      </div>
+
+      <div class="side-section">
+        <div class="side-title">金融證照</div>
+        <div class="cert-item"><span class="cert-dot"></span>期貨商業務員</div>
+        <div class="cert-item"><span class="cert-dot"></span>信託業業務人員</div>
+        <div class="cert-item"><span class="cert-dot"></span>金融市場常識與職業道德</div>
+      </div>
+
+      <div class="side-section">
+        <div class="side-title">技能</div>
+        <div class="skill-group">
+          <div class="skill-group-label">金融專業</div>
+          <div class="skill-pills">
+            <span class="skill-pill">量化回測</span><span class="skill-pill">基本面研究</span><span class="skill-pill">產業分析</span><span class="skill-pill">技術分析</span>
+          </div>
+        </div>
+        <div class="skill-group" style="margin-top:5px;">
+          <div class="skill-group-label">程式與工具</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span><span class="skill-pill">yfinance</span><span class="skill-pill">FinMind</span><span class="skill-pill">JavaScript</span><span class="skill-pill">React</span><span class="skill-pill">Git</span>
+          </div>
+        </div>
+        <div class="skill-group" style="margin-top:5px;">
+          <div class="skill-group-label">語言</div>
+          <div class="skill-pills">
+            <span class="skill-pill">中文（母語）</span><span class="skill-pill">英文（流利）</span><span class="skill-pill">日文（N4-N5）</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

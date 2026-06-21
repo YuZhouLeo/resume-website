@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>莊宇正 履歷 — 凱基證券投資顧問</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent:  #2563a8;
+      --muted:   #64748b;
+      --border:  #d1dde8;
+      --bg-side: #f0f5fa;
+      --text:    #111827;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans TC', 'Inter', sans-serif;
+      font-size: 9.5pt;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    /* ── A4 wrapper ── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--primary);
+      color: #fff;
+      padding: 22px 32px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    .header-name h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -.5px;
+      line-height: 1;
+    }
+    .header-name .sub {
+      font-size: 9pt;
+      opacity: .75;
+      margin-top: 4px;
+      letter-spacing: .04em;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 8.5pt;
+      opacity: .9;
+      line-height: 1.8;
+    }
+    .header-contact a { color: #b8d4f0; text-decoration: none; }
+
+    /* ── Body layout ── */
+    .body {
+      display: flex;
+      flex: 1;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 188px;
+      flex-shrink: 0;
+      background: var(--bg-side);
+      padding: 20px 16px;
+      border-right: 1px solid var(--border);
+    }
+    .sb-section { margin-bottom: 18px; }
+    .sb-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+    .sb-item { margin-bottom: 6px; }
+    .sb-item .label {
+      font-size: 8pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .sb-item .value {
+      font-size: 8pt;
+      color: var(--muted);
+    }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .tag {
+      background: #dce8f5;
+      color: var(--primary);
+      font-size: 7.5pt;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 5px;
+      font-size: 8pt;
+      margin-bottom: 5px;
+      color: var(--text);
+    }
+    .cert-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2ecc71;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    /* ── Main content ── */
+    .main {
+      flex: 1;
+      padding: 20px 26px;
+    }
+    .section { margin-bottom: 16px; }
+    .sec-title {
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .hcard {
+      background: #f0f5fa;
+      border-left: 3px solid var(--accent);
+      padding: 8px 10px;
+    }
+    .hcard .hcard-label {
+      font-size: 7pt;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .hcard p {
+      font-size: 8pt;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .exp-item { margin-bottom: 10px; }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .exp-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .exp-date {
+      font-size: 8pt;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .exp-org {
+      font-size: 8pt;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    ul.exp-list {
+      padding-left: 14px;
+    }
+    ul.exp-list li {
+      font-size: 8.5pt;
+      margin-bottom: 3px;
+      line-height: 1.5;
+    }
+    ul.exp-list li strong { color: var(--primary); }
+
+    .kpi-row {
+      display: flex;
+      gap: 12px;
+      background: #eef4fc;
+      padding: 7px 10px;
+      border-radius: 2px;
+      margin: 6px 0;
+    }
+    .kpi {
+      text-align: center;
+    }
+    .kpi-num {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .kpi-label {
+      font-size: 7pt;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+
+    .bio {
+      font-size: 8.5pt;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; width: 100%; }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-name">
+      <h1>莊宇正</h1>
+      <div class="sub">Chuang Yu-Cheng &nbsp;·&nbsp; 股權研究實習生申請</div>
+    </div>
+    <div class="header-contact">
+      yuzhouleo@gmail.com<br />
+      0971-750-225<br />
+      國立政治大學 企業管理學系
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="sb-section">
+        <div class="sb-title">學歷</div>
+        <div class="sb-item">
+          <div class="label">國立政治大學</div>
+          <div class="value">企業管理學系 三年級</div>
+          <div class="value">預計 2027 畢業</div>
+          <div style="font-size:9pt;font-weight:700;color:#2563a8;margin-top:3px;">GPA 4.0 / 4.3</div>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">金融證照</div>
+        <div class="cert-item"><span class="cert-dot"></span><span>期貨商業務員</span></div>
+        <div class="cert-item"><span class="cert-dot"></span><span>信託業業務人員</span></div>
+        <div class="cert-item"><span class="cert-dot"></span><span>金融市場常識與職業道德</span></div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">學科成績</div>
+        <div class="sb-item">
+          <div class="label">初級會計學大會考</div>
+          <div class="value" style="margin-top:3px;">第一學期：班排 5-6 / PR 90-95</div>
+          <div class="value" style="color:#2563a8;font-weight:600;">第二學期：班排 2-3 / PR 95-98</div>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">程式與工具</div>
+        <div class="tag-list">
+          <span class="tag">Python</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">FinMind</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Word</span>
+          <span class="tag">Git</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">金融專業技能</div>
+        <div class="tag-list">
+          <span class="tag">資料清洗</span>
+          <span class="tag">量化回測</span>
+          <span class="tag">基本面研究</span>
+          <span class="tag">財務報表</span>
+          <span class="tag">產業分析</span>
+          <span class="tag">MAE/MFE</span>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">語言</div>
+        <div class="sb-item">
+          <div class="label">中文</div><div class="value">母語</div>
+        </div>
+        <div class="sb-item">
+          <div class="label">英文</div><div class="value">流利（讀/寫/說）</div>
+        </div>
+        <div class="sb-item">
+          <div class="label">日文</div><div class="value">N4-N5 進修中</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- 核心亮點 -->
+      <section class="section">
+        <div class="sec-title">核心亮點 Professional Summary</div>
+        <div class="highlight-grid">
+          <div class="hcard">
+            <div class="hcard-label">細節執行力</div>
+            <p>GPA 4.0 × 初級會計學 PR 95-98，在高複雜度情境下維持系統化數據處理的精確性與穩定性。</p>
+          </div>
+          <div class="hcard">
+            <div class="hcard-label">量化資料處理</div>
+            <p>獨立完成台股六年原始行情資料的蒐集、清洗與品質檢核，具備大量資料整理與資料庫維護的實務基礎。</p>
+          </div>
+          <div class="hcard">
+            <div class="hcard-label">即戰力金融基礎</div>
+            <p>三張金融證照 + 產業研究實績（美股波段 +100%），能快速投入研究支援任務並理解分析師的工作脈絡。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 投資實績 -->
+      <section class="section">
+        <div class="sec-title">投資研究實績 Research Track Record</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">量化策略研究：處置股量能過濾系統（Strategy E）</span>
+            <span class="exp-date">2020 – 2026</span>
+          </div>
+          <div class="exp-org">Python · yfinance · FinMind · MAE/MFE 歸因分析</div>
+          <ul class="exp-list">
+            <li>獨立執行<strong>從原始資料蒐集到策略驗證的全流程</strong>：行情下載、資料清洗、因子建構、回測模型建立。</li>
+            <li>雙因子架構（監管處置事件 × 量能篩選），六年回測：<strong>勝率 78.2%、累積報酬 527.4%、MDD -29.5%</strong>。</li>
+            <li>運用 MAE/MFE 統計方法進行逐筆交易歸因（平均 MFE 7.23% > MAE 5.30%），驗證因子有效性而非僅看損益曲線。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">產業研究：光通訊產業 — Lumentum（LITE.US）</span>
+            <span class="exp-date">2025 Q4</span>
+          </div>
+          <div class="exp-org">由上而下分析 · 競爭格局 · 財務結構評估</div>
+          <ul class="exp-list">
+            <li>系統性分析「光進銅退」技術轉型：技術驅動因素（矽光子物理限制）→ 競爭格局（Lumentum / II-VI / Coherent）→ 財務評估（毛利率趨勢、CapEx 循環）。</li>
+            <li>2025 年 12 月提前布局，<strong>達成波段獲利逾 100%</strong>，驗證由上而下研究框架的可執行性。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 領導與技術 -->
+      <section class="section">
+        <div class="sec-title">領導與技術專案 Leadership & Projects</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">政大 AI 應用社｜教學長</span>
+            <span class="exp-date">2024.09 – 至今</span>
+          </div>
+          <ul class="exp-list">
+            <li>主講 <strong>4 場</strong> AI 實務課程，累積指導 <strong>60+ 名學員</strong>，負責將複雜技術概念轉化為易於理解的實務應用內容。</li>
+            <li>具備在多元背景環境中清晰溝通、協調協作與推動事務落地的能力。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">股東會紀念品權利交易平台（FinTech 專案）</span>
+            <span class="exp-date">2025</span>
+          </div>
+          <ul class="exp-list">
+            <li>獨立開發全端電商平台（Python、React、Zeabur），整合 LINE OAuth / LIFF，解決散戶領取股東會紀念品的流程痛點。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 自傳 -->
+      <section class="section">
+        <div class="sec-title">為何選擇凱基證券投資顧問</div>
+        <p class="bio">
+          凱基投資顧問在台灣股票研究領域具備深厚積累，旗下研究覆蓋廣度與嚴謹的分析文化，是目前台灣最值得學習研究流程的機構之一。對一位有志在研究端長期深耕的學生而言，作為股權研究支援分析師，能近距離觀察一線研究員如何從原始資料萃取出具投資價值的洞察，是最高效的實戰學習路徑。
+        </p>
+        <p class="bio" style="margin-top:6px;">
+          我具備量化回測的資料清洗與品質控管經驗，能快速適應大量原始資料的整理與資料庫維護工作；三張金融證照搭配初級會計學 PR 95-98 的表現，確保在高強度的研究支援工作中維持精確性。期待在凱基嚴謹的專業環境中，從每一份筆記、每一組資料中建立對股票研究工作完整且紮實的認識。
+        </p>
+      </section>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

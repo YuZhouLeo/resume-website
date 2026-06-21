@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yu-Cheng Chuang — Resume · KGI Securities Investment Advisory</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1a3a5c;
+      --accent:  #2563a8;
+      --muted:   #64748b;
+      --border:  #d1dde8;
+      --bg-side: #f0f5fa;
+      --text:    #111827;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans TC', sans-serif;
+      font-size: 9.5pt;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      box-shadow: 0 0 24px rgba(0,0,0,.12);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--primary);
+      color: #fff;
+      padding: 22px 32px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    .header-name h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -.5px;
+      line-height: 1;
+    }
+    .header-name .sub {
+      font-size: 9pt;
+      opacity: .75;
+      margin-top: 4px;
+      letter-spacing: .04em;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 8.5pt;
+      opacity: .9;
+      line-height: 1.8;
+    }
+
+    /* ── Body ── */
+    .body { display: flex; flex: 1; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 188px;
+      flex-shrink: 0;
+      background: var(--bg-side);
+      padding: 20px 16px;
+      border-right: 1px solid var(--border);
+    }
+    .sb-section { margin-bottom: 18px; }
+    .sb-title {
+      font-size: 7pt;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+    .sb-item { margin-bottom: 6px; }
+    .sb-item .label { font-size: 8pt; font-weight: 700; color: var(--primary); }
+    .sb-item .value { font-size: 8pt; color: var(--muted); }
+
+    .tag-list { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .tag {
+      background: #dce8f5;
+      color: var(--primary);
+      font-size: 7.5pt;
+      font-weight: 500;
+      padding: 2px 7px;
+      border-radius: 2px;
+    }
+
+    .cert-item {
+      display: flex; align-items: flex-start; gap: 5px;
+      font-size: 8pt; margin-bottom: 5px; color: var(--text);
+    }
+    .cert-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: #2ecc71; flex-shrink: 0; margin-top: 4px;
+    }
+
+    /* ── Main ── */
+    .main { flex: 1; padding: 20px 26px; }
+    .section { margin-bottom: 16px; }
+    .sec-title {
+      font-size: 8pt; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 3px; margin-bottom: 10px;
+    }
+
+    .highlight-grid {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px; margin-bottom: 4px;
+    }
+    .hcard {
+      background: #f0f5fa;
+      border-left: 3px solid var(--accent);
+      padding: 8px 10px;
+    }
+    .hcard .hcard-label {
+      font-size: 7pt; font-weight: 700; color: var(--accent);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 3px;
+    }
+    .hcard p { font-size: 8pt; color: var(--text); line-height: 1.5; }
+
+    .exp-item { margin-bottom: 10px; }
+    .exp-header {
+      display: flex; justify-content: space-between;
+      align-items: baseline; gap: 8px;
+    }
+    .exp-title { font-size: 9.5pt; font-weight: 700; color: var(--primary); }
+    .exp-date { font-size: 8pt; color: var(--muted); white-space: nowrap; }
+    .exp-org { font-size: 8pt; color: var(--muted); margin-bottom: 4px; }
+
+    ul.exp-list { padding-left: 14px; }
+    ul.exp-list li {
+      font-size: 8.5pt; margin-bottom: 3px; line-height: 1.5;
+    }
+    ul.exp-list li strong { color: var(--primary); }
+
+    .perf-row {
+      display: flex; gap: 10px;
+      background: #eef4fc; padding: 7px 10px;
+      border-radius: 2px; margin: 6px 0;
+    }
+    .perf-item { text-align: center; }
+    .perf-num { font-size: 10.5pt; font-weight: 700; color: var(--accent); line-height: 1; }
+    .perf-label { font-size: 7pt; color: var(--muted); margin-top: 1px; }
+
+    .bio { font-size: 8.5pt; line-height: 1.7; color: #374151; }
+
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; width: 100%; }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-name">
+      <h1>Yu-Cheng Chuang</h1>
+      <div class="sub">Equity Research Intern Application</div>
+    </div>
+    <div class="header-contact">
+      yuzhouleo@gmail.com<br />
+      +886 971-750-225<br />
+      National Chengchi University, Dept. of Business Administration
+    </div>
+  </header>
+
+  <div class="body">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="sb-section">
+        <div class="sb-title">Education</div>
+        <div class="sb-item">
+          <div class="label">National Chengchi University</div>
+          <div class="value">B.B.A., Business Administration</div>
+          <div class="value">Year 3 · Expected Jun 2027</div>
+          <div style="font-size:9pt;font-weight:700;color:#2563a8;margin-top:3px;">GPA 4.0 / 4.3</div>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">Licenses</div>
+        <div class="cert-item"><span class="cert-dot"></span><span>Futures Dealer Representative</span></div>
+        <div class="cert-item"><span class="cert-dot"></span><span>Trust Business Personnel</span></div>
+        <div class="cert-item"><span class="cert-dot"></span><span>Financial Market & Professional Ethics</span></div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">Accounting Exam</div>
+        <div class="sb-item">
+          <div class="label">Intro to Accounting · NCCU</div>
+          <div class="value" style="margin-top:3px;">Sem. 1: Class rank 5-6 · PR 90-95</div>
+          <div class="value" style="color:#2563a8;font-weight:600;">Sem. 2: Class rank 2-3 · PR 95-98</div>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">Tools & Languages</div>
+        <div class="tag-list">
+          <span class="tag">Python</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Word</span>
+          <span class="tag">yfinance</span>
+          <span class="tag">FinMind</span>
+          <span class="tag">Git</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">Finance Skills</div>
+        <div class="tag-list">
+          <span class="tag">Data Cleaning</span>
+          <span class="tag">Quantitative Backtesting</span>
+          <span class="tag">Fundamental Research</span>
+          <span class="tag">Financial Statements</span>
+          <span class="tag">Industry Analysis</span>
+          <span class="tag">MAE/MFE</span>
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-title">Languages</div>
+        <div class="sb-item">
+          <div class="label">Mandarin Chinese</div><div class="value">Native</div>
+        </div>
+        <div class="sb-item">
+          <div class="label">English</div><div class="value">Fluent (R/W/S)</div>
+        </div>
+        <div class="sb-item">
+          <div class="label">Japanese</div><div class="value">N4–N5, in progress</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- Highlights -->
+      <section class="section">
+        <div class="sec-title">Professional Summary</div>
+        <div class="highlight-grid">
+          <div class="hcard">
+            <div class="hcard-label">Detail-Oriented Execution</div>
+            <p>GPA 4.0 × Accounting PR 95-98. Maintains systematic accuracy in high-complexity data processing tasks.</p>
+          </div>
+          <div class="hcard">
+            <div class="hcard-label">Quantitative Data Handling</div>
+            <p>Independently managed 6-year Taiwan stock raw data collection, cleaning, and quality validation — directly applicable to database maintenance.</p>
+          </div>
+          <div class="hcard">
+            <div class="hcard-label">Ready-to-Deploy Finance Base</div>
+            <p>3 financial licenses + industry research track record (US equity +100% gain). Able to grasp analyst workflows from day one.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Track Record -->
+      <section class="section">
+        <div class="sec-title">Investment Research Track Record</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Quantitative Strategy: Disposition Stock Volume-Filter System (Strategy E)</span>
+            <span class="exp-date">2020 – 2026</span>
+          </div>
+          <div class="exp-org">Python · yfinance · FinMind · MAE/MFE Attribution Analysis</div>
+          <ul class="exp-list">
+            <li>Independently executed <strong>end-to-end pipeline</strong>: raw data download → cleaning → factor construction → backtest model build.</li>
+            <li>Dual-factor framework (regulatory disposition events × volume filter >1,000 lots). 6-year backtest: <strong>win rate 78.2%, cumulative return 527.4%, MDD −29.5%</strong>.</li>
+            <li>Applied MAE/MFE statistics for per-trade attribution (avg MFE 8.18% > avg MAE 4.53%), validating factor effectiveness beyond P&amp;L curves.</li>
+          </ul>
+          <div class="perf-row">
+            <div class="perf-item"><div class="perf-num">+527.4%</div><div class="perf-label">Cumul. Return</div></div>
+            <div class="perf-item"><div class="perf-num">78.2%</div><div class="perf-label">Win Rate</div></div>
+            <div class="perf-item"><div class="perf-num">+3.85%</div><div class="perf-label">Avg Return/Trade</div></div>
+            <div class="perf-item"><div class="perf-num">−29.5%</div><div class="perf-label">Max Drawdown</div></div>
+            <div class="perf-item"><div class="perf-num">4.30</div><div class="perf-label">Sharpe Ratio</div></div>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Industry Research: Optical Networking — Lumentum (LITE.US)</span>
+            <span class="exp-date">Q4 2025</span>
+          </div>
+          <div class="exp-org">Top-down Framework · Competitive Landscape · Financial Structure Assessment</div>
+          <ul class="exp-list">
+            <li>Analyzed "copper-to-optical" infrastructure transition: silicon photonics physics constraints → competitive mapping (Lumentum / II-VI / Coherent) → financial evaluation (gross margin trend, CapEx cycle).</li>
+            <li>Initiated position in December 2025. <strong>Achieved +100%+ gain over the holding period</strong>, validating the top-down research framework.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Leadership & Projects -->
+      <section class="section">
+        <div class="sec-title">Leadership &amp; Projects</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">NCCU AI Application Club｜Teaching Director</span>
+            <span class="exp-date">Sep 2024 – Present</span>
+          </div>
+          <ul class="exp-list">
+            <li>Delivered <strong>4 hands-on AI workshops</strong> and mentored <strong>60+ students</strong> in AI-assisted development and finance automation applications.</li>
+            <li>Demonstrated ability to communicate complex concepts clearly across diverse audiences — transferable to research note-taking and meeting documentation.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <span class="exp-title">Shareholder Gift Rights Trading Platform (FinTech Project)</span>
+            <span class="exp-date">2025</span>
+          </div>
+          <ul class="exp-list">
+            <li>Built full-stack e-commerce platform (Python, React, Zeabur) with LINE OAuth / LIFF integration, autonomously from market insight to live deployment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cover letter -->
+      <section class="section">
+        <div class="sec-title">Why KGI Securities Investment Advisory</div>
+        <p class="bio">
+          KGI Securities Investment Advisory has established itself as one of Taiwan's most rigorous equity research platforms, with comprehensive sector coverage and a culture of analytical discipline. For a student committed to building a long-term career in research, joining the team as a support analyst represents the most efficient learning path — observing how seasoned analysts transform raw data into actionable investment insights, from primary data collection through to final report.
+        </p>
+        <p class="bio" style="margin-top:6px;">
+          My experience managing large-scale raw data pipelines in quantitative backtesting — including data quality validation and structured database maintenance — directly prepares me for the day-to-day demands of supporting a research team. With a GPA of 4.0, three financial licenses, and Accounting PR 95-98, I am confident in maintaining the precision and speed required under a high-intensity research workflow. I look forward to contributing from day one and building a complete, rigorous understanding of equity research practice at KGI.
+        </p>
+      </section>
+
+    </main>
+  </div>
+</div>
+</body>
+</html>

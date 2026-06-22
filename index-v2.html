@@ -154,6 +154,8 @@
         <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#works">精選專案</a>
         <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
+          href="#track-record">交易實績</a>
+        <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#discipline">研究紀律</a>
         <a class="text-slate-500 font-medium tracking-tight hover:text-slate-900 transition-colors"
           href="#about">關於我</a>
@@ -174,6 +176,7 @@
     <nav class="flex flex-col divide-y divide-slate-200 px-6 py-4">
       <a class="py-5 text-xl font-bold tracking-tight text-slate-900 hover:text-primary transition-colors" href="#expertise">專業領域</a>
       <a class="py-5 text-xl font-bold tracking-tight text-slate-900 hover:text-primary transition-colors" href="#works">精選專案</a>
+      <a class="py-5 text-xl font-bold tracking-tight text-slate-900 hover:text-primary transition-colors" href="#track-record">交易實績</a>
       <a class="py-5 text-xl font-bold tracking-tight text-slate-900 hover:text-primary transition-colors" href="#discipline">研究紀律</a>
       <a class="py-5 text-xl font-bold tracking-tight text-slate-900 hover:text-primary transition-colors" href="#about">關於我</a>
     </nav>
@@ -534,6 +537,13 @@
                   <img src="./tg-vix.png" alt="台股 VIX 波動率盤後推播" loading="lazy"
                     class="max-h-full max-w-full object-contain shadow-lg" />
                 </figure>
+                <figure
+                  class="tg-slide absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300"
+                  data-title="期貨大額交易人未平倉異常偵測"
+                  data-desc="每天盤後比對個股期貨「大額交易人未平倉」與前一交易日的變化，自動揪出增減幅度異常的標的（圖為當日未平倉明顯增加的 8 檔），同時列出變化百分比與口數，一眼看出主力在期貨端正往哪個方向卡位。資料來源為台灣期貨交易所。">
+                  <img src="./tg-futures-oi.png" alt="期貨大額交易人未平倉異常增減偵測盤後推播" loading="lazy"
+                    class="max-h-full max-w-full object-contain shadow-lg" />
+                </figure>
                 <button type="button" aria-label="上一張"
                   class="tg-prev absolute left-1 top-1/2 -translate-y-1/2 z-20 w-9 h-9 flex items-center justify-center bg-white/10 hover:bg-white/25 text-primary-fixed transition-colors">
                   <span class="material-symbols-outlined">chevron_left</span>
@@ -615,6 +625,66 @@
               <p class="text-on-surface-variant text-sm leading-relaxed">手上有三張金融證照（期貨商業務員、信託業業務人員、金融市場常識與職業道德），加上 GPA
                 4.0 和初級會計學大會考全校前段（PR 90+）的底子。需要扎實財金基礎的工作，我可以馬上接。</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real trading track record: 融券放空量化模型實單 -->
+    <section class="py-16 md:py-24 lg:py-32 px-6 md:px-8 bg-surface-container-low" id="track-record">
+      <div class="max-w-7xl mx-auto space-y-10 md:space-y-12">
+        <div class="space-y-4 reveal">
+          <div class="text-accent font-bold text-xs tracking-widest uppercase">真實實績 · 券商成交回報 · 可驗證</div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tighter">把模型訊號變成真實的進出場</h2>
+          <p class="text-on-surface-variant text-lg max-w-3xl leading-relaxed">
+            這不是回測，是 2026 上半年我依自建量化<strong class="text-on-surface">做空模型</strong>實際下單的對帳結果，橫跨台新、統一、口袋三家券商，損益已含手續費與交易稅。模型專挑「剛解除『關緊閉』（處置）、隔日容易回檔」的標的，綜合股價位階、法人買賣超與
+            K 線型態，判斷一檔該不該空。
+          </p>
+        </div>
+
+        <!-- 招牌數字 -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-0.5 bg-outline-variant/20 reveal">
+          <div class="bg-surface p-6 md:p-8">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary nums">64.5%</div>
+            <div class="text-xs text-on-surface-variant mt-1 tracking-wide">勝率（20 勝 / 11 敗）</div>
+          </div>
+          <div class="bg-surface p-6 md:p-8">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary nums">+73,234</div>
+            <div class="text-xs text-on-surface-variant mt-1 tracking-wide">淨已實現損益（TWD）</div>
+          </div>
+          <div class="bg-surface p-6 md:p-8">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary nums">1.51</div>
+            <div class="text-xs text-on-surface-variant mt-1 tracking-wide">獲利因子（總獲利／總虧損）</div>
+          </div>
+          <div class="bg-surface p-6 md:p-8">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary nums">31</div>
+            <div class="text-xs text-on-surface-variant mt-1 tracking-wide">交易筆數（2026/01–05）</div>
+          </div>
+        </div>
+
+        <!-- 逐筆明細圖（可點擊放大）-->
+        <div class="reveal">
+          <div class="text-xs font-bold tracking-widest uppercase text-on-surface-variant mb-4">完整融券交易明細 · 逐筆</div>
+          <a href="./short-record.svg" target="_blank" class="block bg-on-surface p-4 md:p-8 group"
+            aria-label="開啟融券交易紀錄大圖">
+            <img src="./short-record.svg" alt="融券放空交易紀錄（2026/01–05，31 筆，勝率 64.5%，淨已實現損益 +73,234 元）"
+              loading="lazy"
+              class="w-full max-h-[820px] object-contain mx-auto bg-white group-hover:brightness-105 transition" />
+            <div class="text-[10px] text-slate-500 nums mt-3 text-center flex items-center justify-center gap-1">
+              <span class="material-symbols-outlined text-xs">zoom_in</span>逐筆明細 · 點擊看大圖
+            </div>
+          </a>
+        </div>
+
+        <!-- 實單心得 -->
+        <div class="bg-surface p-7 md:p-10 reveal">
+          <div class="text-primary font-bold text-[10px] tracking-widest uppercase mb-4">實單心得 · 模型之外的兩道功課</div>
+          <div class="space-y-4 text-on-surface-variant leading-relaxed max-w-3xl">
+            <p>會做這個模型，是因為我發現剛解除「關緊閉」（處置）的股票，隔天多半會回檔。於是我把股價位階、法人買賣超、K
+              線型態這些資料兜在一起，讓模型替我判斷一檔該不該空。</p>
+            <p>真正下場交易後才懂，最難的從來不是「找出什麼會影響股價」，而是另外兩件事：我的執行力，還有我的本金。</p>
+            <p>執行力上，模型給了訊號，我卻常常自作聰明、臨場改掉原本的進出場計畫。後來我才接受，要把模型該有的優勢穩定拿回來，得先管住自己——這也是我把愈來愈多紀律寫進系統、交給程式執行的原因：把情緒從下單那一刻移開。</p>
+            <p>本金上，太貴的股票我根本空不起。資金規模還小的時候，碰到高價股，就算它真的照模型的方向跌，我也只能在旁邊看著，什麼都做不了。</p>
           </div>
         </div>
       </div>

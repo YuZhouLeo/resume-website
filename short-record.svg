@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 1121" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC','Noto Sans CJK TC','Segoe UI',sans-serif">
+  <defs>
+    <style>
+      .title{ font-size:27px; font-weight:700; fill:#ffffff; }
+      .sub{ font-size:13px; fill:#c7d4e2; }
+      .statNum{ font-size:25px; font-weight:700; }
+      .statLbl{ font-size:12px; fill:#64748b; }
+      .th{ font-size:12.5px; font-weight:700; fill:#52606d; letter-spacing:.3px; }
+      .nm{ font-size:14px; font-weight:600; fill:#1f2933; }
+      .cd{ font-size:11px; fill:#9aa5b1; }
+      .cell{ font-size:13px; fill:#3e4c59; }
+      .num{ font-size:13px; font-variant-numeric:tabular-nums; }
+      .foot{ font-size:11.5px; fill:#7b8794; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1040" height="1121" fill="#ffffff"/>
+  <rect x="0" y="0" width="1040" height="96" fill="#0f2a43"/>
+  <text x="28" y="42" class="title">融券交易紀錄</text>
+  <text x="28" y="70" class="sub">2026/01 – 2026/05　·　台新證券 · 統一證券 · 口袋證券　·　已實現損益（含手續費／交易稅）</text>
+  <rect x="28" y="112" width="235.5" height="64" rx="9" fill="#ffffff" stroke="#e6e9ef"/>
+  <text x="44" y="142" class="statNum" fill="#1f2933">31</text>
+  <text x="44" y="162" class="statLbl">交易筆數</text>
+  <rect x="277.5" y="112" width="235.5" height="64" rx="9" fill="#ffffff" stroke="#e6e9ef"/>
+  <text x="293.5" y="142" class="statNum" fill="#0f2a43">64.5%</text>
+  <text x="293.5" y="162" class="statLbl">勝率（20 勝 / 11 敗）</text>
+  <rect x="527" y="112" width="235.5" height="64" rx="9" fill="#ffffff" stroke="#e6e9ef"/>
+  <text x="543" y="142" class="statNum" fill="#d62839">+73,234</text>
+  <text x="543" y="162" class="statLbl">淨已實現損益 (TWD)</text>
+  <rect x="776.5" y="112" width="235.5" height="64" rx="9" fill="#ffffff" stroke="#e6e9ef"/>
+  <text x="792.5" y="142" class="statNum" fill="#1f2933">1.51</text>
+  <text x="792.5" y="162" class="statLbl">獲利因子 (總獲利/總虧損)</text>
+  <text x="28" y="204" class="th">標的</text>
+  <text x="248" y="204" class="th">期間（進→出）</text>
+  <text x="430" y="204" class="th" text-anchor="end">持有</text>
+  <text x="506" y="204" class="th" text-anchor="end">張數</text>
+  <text x="700" y="204" class="th" text-anchor="end">進→出價</text>
+  <text x="838" y="204" class="th" text-anchor="end">報酬率</text>
+  <text x="1012" y="204" class="th" text-anchor="end">損益 (TWD)</text>
+  <line x1="28" y1="214" x2="1012" y2="214" stroke="#0f2a43" stroke-width="1.5"/>
+  <text x="28" y="246" class="nm">金居 <tspan class="cd">8358</tspan></text>
+  <text x="248" y="246" class="cell">01/08 → 01/09</text>
+  <text x="430" y="246" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="246" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="246" class="num" fill="#7b8794" text-anchor="end">255 → 255</text>
+  <text x="838" y="246" class="num" fill="#2f9e44" text-anchor="end">-0.51%</text>
+  <text x="1012" y="246" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-1,169</text>
+  <rect x="22" y="255" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="273" class="nm">南亞科 <tspan class="cd">2408</tspan></text>
+  <text x="248" y="273" class="cell">01/08 → 01/09</text>
+  <text x="430" y="273" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="273" class="num" fill="#52606d" text-anchor="end">3張</text>
+  <text x="700" y="273" class="num" fill="#7b8794" text-anchor="end">242 → 222.7</text>
+  <text x="838" y="273" class="num" fill="#d62839" text-anchor="end">+8.37%</text>
+  <text x="1012" y="273" class="num" font-weight="700" fill="#d62839" text-anchor="end">+54,696</text>
+  <text x="28" y="300" class="nm">波若威 <tspan class="cd">3163</tspan></text>
+  <text x="248" y="300" class="cell">01/09 → 01/12</text>
+  <text x="430" y="300" class="num" fill="#52606d" text-anchor="end">3天</text>
+  <text x="506" y="300" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="300" class="num" fill="#7b8794" text-anchor="end">371.5 → 358.5</text>
+  <text x="838" y="300" class="num" fill="#d62839" text-anchor="end">+3.04%</text>
+  <text x="1012" y="300" class="num" font-weight="700" fill="#d62839" text-anchor="end">+11,302</text>
+  <rect x="22" y="309" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="327" class="nm">高力 <tspan class="cd">8996</tspan></text>
+  <text x="248" y="327" class="cell">01/15 → 01/16</text>
+  <text x="430" y="327" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="327" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="327" class="num" fill="#7b8794" text-anchor="end">708 → 688</text>
+  <text x="838" y="327" class="num" fill="#d62839" text-anchor="end">+2.63%</text>
+  <text x="1012" y="327" class="num" font-weight="700" fill="#d62839" text-anchor="end">+16,761</text>
+  <text x="28" y="354" class="nm">元晶 <tspan class="cd">6443</tspan></text>
+  <text x="248" y="354" class="cell">01/15 → 01/16</text>
+  <text x="430" y="354" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="354" class="num" fill="#52606d" text-anchor="end">5張</text>
+  <text x="700" y="354" class="num" fill="#7b8794" text-anchor="end">38.3 → 38.4</text>
+  <text x="838" y="354" class="num" fill="#2f9e44" text-anchor="end">-0.51%</text>
+  <text x="1012" y="354" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-974</text>
+  <rect x="22" y="363" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="381" class="nm">金寶 <tspan class="cd">2312</tspan></text>
+  <text x="248" y="381" class="cell">01/19 → 01/20</text>
+  <text x="430" y="381" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="381" class="num" fill="#52606d" text-anchor="end">3張</text>
+  <text x="700" y="381" class="num" fill="#7b8794" text-anchor="end">35.6 → 35.1</text>
+  <text x="838" y="381" class="num" fill="#d62839" text-anchor="end">+0.87%</text>
+  <text x="1012" y="381" class="num" font-weight="700" fill="#d62839" text-anchor="end">+844</text>
+  <text x="28" y="408" class="nm">恩德 <tspan class="cd">1528</tspan></text>
+  <text x="248" y="408" class="cell">01/21 → 01/22</text>
+  <text x="430" y="408" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="408" class="num" fill="#52606d" text-anchor="end">8張</text>
+  <text x="700" y="408" class="num" fill="#7b8794" text-anchor="end">30.3 → 27.9</text>
+  <text x="838" y="408" class="num" fill="#d62839" text-anchor="end">+7.46%</text>
+  <text x="1012" y="408" class="num" font-weight="700" fill="#d62839" text-anchor="end">+18,104</text>
+  <rect x="22" y="417" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="435" class="nm">台玻 <tspan class="cd">1802</tspan></text>
+  <text x="248" y="435" class="cell">01/22 → 01/23</text>
+  <text x="430" y="435" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="435" class="num" fill="#52606d" text-anchor="end">3張</text>
+  <text x="700" y="435" class="num" fill="#7b8794" text-anchor="end">51.2 → 48.5</text>
+  <text x="838" y="435" class="num" fill="#d62839" text-anchor="end">+5.43%</text>
+  <text x="1012" y="435" class="num" font-weight="700" fill="#d62839" text-anchor="end">+7,504</text>
+  <text x="28" y="462" class="nm">南電 <tspan class="cd">8046</tspan></text>
+  <text x="248" y="462" class="cell">01/26 → 01/27</text>
+  <text x="430" y="462" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="462" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="462" class="num" fill="#7b8794" text-anchor="end">373 → 396</text>
+  <text x="838" y="462" class="num" fill="#2f9e44" text-anchor="end">-7.54%</text>
+  <text x="1012" y="462" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-25,508</text>
+  <rect x="22" y="471" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="489" class="nm">統新 <tspan class="cd">6426</tspan></text>
+  <text x="248" y="489" class="cell">02/04 → 02/05</text>
+  <text x="430" y="489" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="489" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="489" class="num" fill="#7b8794" text-anchor="end">127.8 → 124.5</text>
+  <text x="838" y="489" class="num" fill="#d62839" text-anchor="end">+2.08%</text>
+  <text x="1012" y="489" class="num" font-weight="700" fill="#d62839" text-anchor="end">+4,821</text>
+  <text x="28" y="516" class="nm">青雲 <tspan class="cd">5386</tspan></text>
+  <text x="248" y="516" class="cell">02/10 → 02/11</text>
+  <text x="430" y="516" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="516" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="516" class="num" fill="#7b8794" text-anchor="end">142.3 → 153.8</text>
+  <text x="838" y="516" class="num" fill="#2f9e44" text-anchor="end">-9.65%</text>
+  <text x="1012" y="516" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-24,917</text>
+  <rect x="22" y="525" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="543" class="nm">青雲 <tspan class="cd">5386</tspan></text>
+  <text x="248" y="543" class="cell">02/24 → 02/25</text>
+  <text x="430" y="543" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="543" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="543" class="num" fill="#7b8794" text-anchor="end">192.5 → 209.5</text>
+  <text x="838" y="543" class="num" fill="#2f9e44" text-anchor="end">-10.47%</text>
+  <text x="1012" y="543" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-36,590</text>
+  <text x="28" y="570" class="nm">統新 <tspan class="cd">6426</tspan></text>
+  <text x="248" y="570" class="cell">03/01 → 03/02</text>
+  <text x="430" y="570" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="570" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="570" class="num" fill="#7b8794" text-anchor="end">191.5 → 184.5</text>
+  <text x="838" y="570" class="num" fill="#d62839" text-anchor="end">+3.30%</text>
+  <text x="1012" y="570" class="num" font-weight="700" fill="#d62839" text-anchor="end">+11,481</text>
+  <rect x="22" y="579" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="597" class="nm">台玻 <tspan class="cd">1802</tspan></text>
+  <text x="248" y="597" class="cell">03/03 → 03/04</text>
+  <text x="430" y="597" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="597" class="num" fill="#52606d" text-anchor="end">4張</text>
+  <text x="700" y="597" class="num" fill="#7b8794" text-anchor="end">63.7 → 57.4</text>
+  <text x="838" y="597" class="num" fill="#d62839" text-anchor="end">+9.18%</text>
+  <text x="1012" y="597" class="num" font-weight="700" fill="#d62839" text-anchor="end">+23,550</text>
+  <text x="28" y="624" class="nm">金居 <tspan class="cd">8358</tspan></text>
+  <text x="248" y="624" class="cell">03/03 → 03/04</text>
+  <text x="430" y="624" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="624" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="624" class="num" fill="#7b8794" text-anchor="end">271 → 270</text>
+  <text x="838" y="624" class="num" fill="#2f9e44" text-anchor="end">-0.32%</text>
+  <text x="1012" y="624" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-797</text>
+  <rect x="22" y="633" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="651" class="nm">台玻 <tspan class="cd">1802</tspan></text>
+  <text x="248" y="651" class="cell">03/03 → 03/05</text>
+  <text x="430" y="651" class="num" fill="#52606d" text-anchor="end">2天</text>
+  <text x="506" y="651" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="651" class="num" fill="#7b8794" text-anchor="end">63.7 → 60.6</text>
+  <text x="838" y="651" class="num" fill="#d62839" text-anchor="end">+4.18%</text>
+  <text x="1012" y="651" class="num" font-weight="700" fill="#d62839" text-anchor="end">+2,685</text>
+  <text x="28" y="678" class="nm">汎銓 <tspan class="cd">6830</tspan></text>
+  <text x="248" y="678" class="cell">03/04 → 03/05</text>
+  <text x="430" y="678" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="678" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="678" class="num" fill="#7b8794" text-anchor="end">329 → 352</text>
+  <text x="838" y="678" class="num" fill="#2f9e44" text-anchor="end">-8.45%</text>
+  <text x="1012" y="678" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-25,209</text>
+  <rect x="22" y="687" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="705" class="nm">雷虎 <tspan class="cd">8033</tspan></text>
+  <text x="248" y="705" class="cell">03/05 → 03/06</text>
+  <text x="430" y="705" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="705" class="num" fill="#52606d" text-anchor="end">3張</text>
+  <text x="700" y="705" class="num" fill="#7b8794" text-anchor="end">150.5 → 147.7</text>
+  <text x="838" y="705" class="num" fill="#d62839" text-anchor="end">+1.34%</text>
+  <text x="1012" y="705" class="num" font-weight="700" fill="#d62839" text-anchor="end">+5,518</text>
+  <text x="28" y="732" class="nm">金居 <tspan class="cd">8358</tspan></text>
+  <text x="248" y="732" class="cell">03/05 → 03/06</text>
+  <text x="430" y="732" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="732" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="732" class="num" fill="#7b8794" text-anchor="end">257 → 255</text>
+  <text x="838" y="732" class="num" fill="#d62839" text-anchor="end">+0.24%</text>
+  <text x="1012" y="732" class="num" font-weight="700" fill="#d62839" text-anchor="end">+1,169</text>
+  <rect x="22" y="741" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="759" class="nm">汎銓 <tspan class="cd">6830</tspan></text>
+  <text x="248" y="759" class="cell">03/09 → 03/10</text>
+  <text x="430" y="759" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="759" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="759" class="num" fill="#7b8794" text-anchor="end">386.5 → 381</text>
+  <text x="838" y="759" class="num" fill="#d62839" text-anchor="end">+0.84%</text>
+  <text x="1012" y="759" class="num" font-weight="700" fill="#d62839" text-anchor="end">+2,944</text>
+  <text x="28" y="786" class="nm">IET-KY <tspan class="cd">4971</tspan></text>
+  <text x="248" y="786" class="cell">03/11 → 03/12</text>
+  <text x="430" y="786" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="786" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="786" class="num" fill="#7b8794" text-anchor="end">481.5 → 470</text>
+  <text x="838" y="786" class="num" fill="#d62839" text-anchor="end">+1.71%</text>
+  <text x="1012" y="786" class="num" font-weight="700" fill="#d62839" text-anchor="end">+8,332</text>
+  <rect x="22" y="795" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="813" class="nm">雍智科技 <tspan class="cd">6683</tspan></text>
+  <text x="248" y="813" class="cell">03/13 → 03/16</text>
+  <text x="430" y="813" class="num" fill="#52606d" text-anchor="end">3天</text>
+  <text x="506" y="813" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="813" class="num" fill="#7b8794" text-anchor="end">1130 → 1130</text>
+  <text x="838" y="813" class="num" fill="#2f9e44" text-anchor="end">-0.65%</text>
+  <text x="1012" y="813" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-7,502</text>
+  <text x="28" y="840" class="nm">榮創 <tspan class="cd">3437</tspan></text>
+  <text x="248" y="840" class="cell">03/18 → 03/19</text>
+  <text x="430" y="840" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="840" class="num" fill="#52606d" text-anchor="end">5張</text>
+  <text x="700" y="840" class="num" fill="#7b8794" text-anchor="end">22.5 → 23</text>
+  <text x="838" y="840" class="num" fill="#2f9e44" text-anchor="end">-3.05%</text>
+  <text x="1012" y="840" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-3,098</text>
+  <rect x="22" y="849" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="867" class="nm">港建* <tspan class="cd">3093</tspan></text>
+  <text x="248" y="867" class="cell">03/19 → 03/20</text>
+  <text x="430" y="867" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="867" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="867" class="num" fill="#7b8794" text-anchor="end">53.9 → 48.6</text>
+  <text x="838" y="867" class="num" fill="#d62839" text-anchor="end">+10.30%</text>
+  <text x="1012" y="867" class="num" font-weight="700" fill="#d62839" text-anchor="end">+10,002</text>
+  <text x="28" y="894" class="nm">統新 <tspan class="cd">6426</tspan></text>
+  <text x="248" y="894" class="cell">03/20 → 03/23</text>
+  <text x="430" y="894" class="num" fill="#52606d" text-anchor="end">3天</text>
+  <text x="506" y="894" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="894" class="num" fill="#7b8794" text-anchor="end">169 → 152.5</text>
+  <text x="838" y="894" class="num" fill="#d62839" text-anchor="end">+9.11%</text>
+  <text x="1012" y="894" class="num" font-weight="700" fill="#d62839" text-anchor="end">+15,403</text>
+  <rect x="22" y="903" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="921" class="nm">華星光 <tspan class="cd">4979</tspan></text>
+  <text x="248" y="921" class="cell">03/26 → 03/27</text>
+  <text x="430" y="921" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="921" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="921" class="num" fill="#7b8794" text-anchor="end">411 → 395.5</text>
+  <text x="838" y="921" class="num" fill="#d62839" text-anchor="end">+3.11%</text>
+  <text x="1012" y="921" class="num" font-weight="700" fill="#d62839" text-anchor="end">+12,795</text>
+  <text x="28" y="948" class="nm">中探針 <tspan class="cd">6217</tspan></text>
+  <text x="248" y="948" class="cell">04/13 → 04/14</text>
+  <text x="430" y="948" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="948" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="948" class="num" fill="#7b8794" text-anchor="end">240 → 237</text>
+  <text x="838" y="948" class="num" fill="#d62839" text-anchor="end">+0.59%</text>
+  <text x="1012" y="948" class="num" font-weight="700" fill="#d62839" text-anchor="end">+1,411</text>
+  <rect x="22" y="957" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="975" class="nm">瑞軒 <tspan class="cd">2489</tspan></text>
+  <text x="248" y="975" class="cell">04/14 → 04/15</text>
+  <text x="430" y="975" class="num" fill="#52606d" text-anchor="end">1天</text>
+  <text x="506" y="975" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="975" class="num" fill="#7b8794" text-anchor="end">45.1 → 42.3</text>
+  <text x="838" y="975" class="num" fill="#d62839" text-anchor="end">+5.51%</text>
+  <text x="1012" y="975" class="num" font-weight="700" fill="#d62839" text-anchor="end">+2,505</text>
+  <text x="28" y="1002" class="nm">誠美材 <tspan class="cd">4960</tspan></text>
+  <text x="248" y="1002" class="cell">04/17 → 04/20</text>
+  <text x="430" y="1002" class="num" fill="#52606d" text-anchor="end">3天</text>
+  <text x="506" y="1002" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="1002" class="num" fill="#7b8794" text-anchor="end">33.9 → 37.2</text>
+  <text x="838" y="1002" class="num" fill="#2f9e44" text-anchor="end">-11.74%</text>
+  <text x="1012" y="1002" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-7,159</text>
+  <rect x="22" y="1011" width="996" height="27" fill="#f7f9fc"/>
+  <text x="28" y="1029" class="nm">美達科技 <tspan class="cd">6735</tspan></text>
+  <text x="248" y="1029" class="cell">04/29 → 05/05</text>
+  <text x="430" y="1029" class="num" fill="#52606d" text-anchor="end">6天</text>
+  <text x="506" y="1029" class="num" fill="#52606d" text-anchor="end">2張</text>
+  <text x="700" y="1029" class="num" fill="#7b8794" text-anchor="end">132 → 129.3</text>
+  <text x="838" y="1029" class="num" fill="#d62839" text-anchor="end">+1.63%</text>
+  <text x="1012" y="1029" class="num" font-weight="700" fill="#d62839" text-anchor="end">+3,865</text>
+  <text x="28" y="1056" class="nm">鈦昇 <tspan class="cd">8027</tspan></text>
+  <text x="248" y="1056" class="cell">05/22 → 05/25</text>
+  <text x="430" y="1056" class="num" fill="#52606d" text-anchor="end">3天</text>
+  <text x="506" y="1056" class="num" fill="#52606d" text-anchor="end">1張</text>
+  <text x="700" y="1056" class="num" fill="#7b8794" text-anchor="end">244.5 → 252.5</text>
+  <text x="838" y="1056" class="num" fill="#2f9e44" text-anchor="end">-4.33%</text>
+  <text x="1012" y="1056" class="num" font-weight="700" fill="#2f9e44" text-anchor="end">-9,535</text>
+  <line x1="28" y1="1067" x2="1012" y2="1067" stroke="#e6e9ef" stroke-width="1"/>
+  <rect x="28" y="1081" width="22" height="11" rx="2" fill="#d62839"/>
+  <text x="58" y="1090" class="foot">獲利</text>
+  <rect x="98" y="1081" width="22" height="11" rx="2" fill="#2f9e44"/>
+  <text x="128" y="1090" class="foot">虧損（台股紅漲綠跌慣例）</text>
+  <text x="1012" y="1090" class="foot" text-anchor="end">同一波段分批進出之標的已合併計算　·　資料來源：券商成交回報</text>
+</svg>
